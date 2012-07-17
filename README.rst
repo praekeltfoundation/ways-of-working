@@ -89,9 +89,14 @@ A recommended pattern in logging is to simply reference the modules name for eac
     import logging
     logger = logging.getLogger(__name__)
 
+Then log to Sentry as you would normally using ``logger``::
+    logger.error('There was some crazy error', exc_info=True, extra={
+        'culprit': 'my.view.name',
+    })
+
 See Raven's `configuring logging docs <https://raven.readthedocs.org/en/latest/config/logging.html>`_ for more info.
 
-For web applications you can hook up Django specifically as described in Sentry's `configuring Django docs <https://raven.readthedocs.org/en/latest/config/django.html>`_.
+For web applications you can hook up Django specifically as described in Raven's `configuring Django docs <https://raven.readthedocs.org/en/latest/config/django.html>`_.
 
 To log Django management command errors to Sentry alter your ``manage.py`` to read as follows::
 
