@@ -131,7 +131,7 @@ https://github.com/praekelt/jmbo-skeleton/blob/master/scripts/deploy-project.sh
 deploys Jmbo instances to the /var/praekelt directory. It takes a number of 
 command-line arguments to control the deployment.
 
-The ideas contained in these  scripts will be translated to puppet in the near
+The ideas contained in the last two scripts will be translated to puppet in the near
 future; however, these scripts will always be maintained as a reference for
 third-party developers.
 
