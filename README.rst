@@ -75,7 +75,7 @@ If you find that you need to share work you’re currently doing in a feature br
 Sentry
 ------
 
-Python logging should be handled by `Praekelt's Sentry instance<http://sentry.praekelt.com>`_ for easy/central web access.  
+Python logging should be handled by `Praekelt's Sentry instance <http://sentry.praekelt.com>`_ for easy/central web access.  
 
 Sentry supports the ability to directly tie into Python's logging module. To use it simply add the `Raven <http://raven.readthedocs.org/en/latest/index.html>`_ Python client's ``SentryHandler`` to your logger::
 
