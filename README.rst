@@ -89,8 +89,8 @@ A recommended pattern in logging is to simply reference the modules name for eac
     import logging
     logger = logging.getLogger(__name__)
     
+Then log to Sentry as you would normally using ``logger`` ::
 
-Then log to Sentry as you would normally using ``logger``::
     logger.error('There was some crazy error', exc_info=True, extra={
         'culprit': 'my.view.name',
     })
