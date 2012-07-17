@@ -6,10 +6,11 @@ Core tools
 ----------
 
 * JIRA - issue tracker
-* Virtualenv - sandboxed python modules, great for project specific development environments
+* Virtualenv - sandboxed Python modules, great for project specific development environments
 * Puppet & Fabric - system automation recipes
 * Git, Git Flow & Github - version control
 * Munin - keep tabs on your services
+* Sentry - Python logging
 * Supervisord - keep services running
 
 Sprints
@@ -70,6 +71,48 @@ This could introduce some file conflicts which you can resolve with ‘git merge
 At this point do a ‘git push’ and your changes will be pushed to the repository and are then available to the whole team.
 
 If you find that you need to share work you’re currently doing in a feature branch you can use ‘git flow feature publish <name of branch>’ to publish your feature branch in the repository without merging it into develop. 
+
+Sentry
+------
+
+Python logging should be handled by `Praekelt's Sentry instance<http://sentry.praekelt.com>`_ for easy/central web access.  
+
+Sentry supports the ability to directly tie into Python's logging module. To use it simply add SentryHandler to your logger::
+
+    from raven.conf import setup_logging
+    from raven.handlers.logging import SentryHandler
+
+    setup_logging(SentryHandler('http://public:secret@example.com/1'))
+
+A recommended pattern in logging is to simply reference the modules name for each logger. So for example, you might at the top of your module define the following::
+
+    import logging
+    logger = logging.getLogger(__name__)
+
+See Sentry's `configuring logging docs<https://raven.readthedocs.org/en/latest/config/logging.html>`_ for more info.
+
+For web applications you can hook up Django specifically as described in Sentry's `configuring Django docs<https://raven.readthedocs.org/en/latest/config/django.html>`_.
+
+To log Django management command errors to Sentry alter your ``manage.py`` to read as follows::
+
+    #!/usr/bin/env python
+    import logging
+    import traceback
+    import os
+    import sys
+
+    if __name__ == "__main__":
+        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "project.settings")
+
+        from django.core.management import execute_from_command_line
+
+        try:
+            execute_from_command_line(sys.argv)
+        except Exception, e:
+            exc_info = sys.exc_info()
+            logging.error(e, exc_info=exc_info)
+            traceback.print_exc()
+
 
 Test Coverage
 -------------
