@@ -108,3 +108,30 @@ Our starting point for that switch is 1st of August.
 We use Puppet to provision our machines. We maintain a VirtualBox Ubuntu 10.04 / Lucid image in the repository, using Vagrant we can easily provision this VM with the latest code and use it for testing and development. It is also a quick an easy way for someone who’s completely new to Vumi to get introduced to a working system.
 
 .. _Git flow: https://github.com/nvie/gitflow
+
+Jmbo
+----
+
+Stack::
+
+* Python 2.6 or 2.7 , Django 1.3.1, PostgreSQL >= 8.4, memcached, supervisor, nginx, gunicorn, buildout.
+* Code lives in /var/praekelt owned by the www-data user.
+
+The script located at 
+https://github.com/praekelt/jmbo-skeleton/blob/master/scripts/create-jmbo-project.sh 
+creates a new Jmbo Go project from templates. It is a friendlier replacement for 
+jmbo-paste.
+
+The script located at 
+https://github.com/praekelt/jmbo-skeleton/blob/master/scripts/setup-server.sh 
+prepares a clean Ubuntu 12.04 server to host Jmbo. 
+
+The script located at 
+https://github.com/praekelt/jmbo-skeleton/blob/master/scripts/deploy-project.sh 
+deploys Jmbo instances to the /var/praekelt directory. It takes a number of 
+command-line arguments to control the deployment.
+
+The ideas contained in these  scripts will be translated to puppet in the near
+future; however, these scripts will always be maintained as a reference for
+third-party developers.
+
