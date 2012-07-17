@@ -77,7 +77,7 @@ Sentry
 
 Python logging should be handled by `Praekelt's Sentry instance<http://sentry.praekelt.com>`_ for easy/central web access.  
 
-Sentry supports the ability to directly tie into Python's logging module. To use it simply add SentryHandler to your logger::
+Sentry supports the ability to directly tie into Python's logging module. To use it simply add the `Raven <http://raven.readthedocs.org/en/latest/index.html>`_ Python client's ``SentryHandler`` to your logger::
 
     from raven.conf import setup_logging
     from raven.handlers.logging import SentryHandler
@@ -89,9 +89,9 @@ A recommended pattern in logging is to simply reference the modules name for eac
     import logging
     logger = logging.getLogger(__name__)
 
-See Sentry's `configuring logging docs<https://raven.readthedocs.org/en/latest/config/logging.html>`_ for more info.
+See Raven's `configuring logging docs <https://raven.readthedocs.org/en/latest/config/logging.html>`_ for more info.
 
-For web applications you can hook up Django specifically as described in Sentry's `configuring Django docs<https://raven.readthedocs.org/en/latest/config/django.html>`_.
+For web applications you can hook up Django specifically as described in Sentry's `configuring Django docs <https://raven.readthedocs.org/en/latest/config/django.html>`_.
 
 To log Django management command errors to Sentry alter your ``manage.py`` to read as follows::
 
