@@ -4,7 +4,9 @@ Praekelt Foundation Dev Ways of Working
 Hey, hopefully you're here because you're about to embark on a
 project with us.
 
-Build these docs with::
+These docs are automatically built & available at http://praekelt-ways-of-working.rtfd.org/.
+
+Build these docs locally with::
 
     $ virtualenv ve
     $ source ve/bin/activate
