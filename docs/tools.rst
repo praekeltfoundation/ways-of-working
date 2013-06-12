@@ -97,8 +97,8 @@ all of them but generally a number of these will be involved.
 These will be made available to you on a per project basis. Puppet ensures
 that each of these are backed up.
 
-South
------
+Django Applications
+-------------------
 
 For Django applications, some applications are mandatory:
 
