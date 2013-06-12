@@ -37,7 +37,8 @@ Any estimate you make for actual work done beyond 16 hours is assumed to be
 a) largely thumb-suck.
 b) going to be very hard to review.
 
-Make an effort to keep it to 16 hours.
+Make an effort to keep it to 16 hours or break it up unto multiple tickets
+each representing 16 hours of work.
 
 Git Flow
 --------
