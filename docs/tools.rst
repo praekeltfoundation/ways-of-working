@@ -50,6 +50,9 @@ Have a read through the `blog <http://nvie.com/posts/a-successful-git-branching-
 post describing the general idea and follow the installation instructions
 in the repository to install it for your development platform of choice.
 
+We may require our team to review your code before landing it in the develop branch.
+In that case please provide pull requests for our review.
+
 Hub
 ---
 
