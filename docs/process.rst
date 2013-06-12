@@ -33,6 +33,7 @@ Example flow
 ~~~~~~~~~~~~
 
 ::
+
     $ virtualenv ve
     $ source ve/bin/activate
     (ve)$ git flow feature start issue-1-update-documentation
