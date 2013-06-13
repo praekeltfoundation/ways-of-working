@@ -29,8 +29,18 @@ Make sure the work you are doing has a ticket and is being tracked.
 Stop working and protest immediately if people are treating your mailbox
 as their ticketing system. We're tried that, it does not work.
 
+If a Jira project has a workflow, you need to update your tickets
+appropriately:
+New -> Open -> Fixed in dev (when pushed to github) -> Deployed to QA
+
+Our QA team will move the ticket to QA Passed, and our DevOps team will be
+responsible for the production deployment before the ticket is resolved.
+
+If a ticket is QA Failed then it's back into your section of the workflow.
+
 A ticket should represent a solid piece of work you intend to do.
-Make an effort to keep the work you are trying to do to 16 hours.
+Make an effort to keep the work you are trying to do in one ticket to no more
+than 16 hours.
 
 Any estimate you make for actual work done beyond 16 hours is assumed to be
 
