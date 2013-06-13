@@ -56,9 +56,10 @@ In that case please provide pull requests for our review.
 Hub
 ---
 
-We use Hub_ to interface with GitHub_'s API. Use it allows one to turn issues
-on GitHub into pull-requests. If that is done then once the pull-request is
-merged into the main branch the issue is automatically closed.
+For projects with issues tracked in Github issues, We use Hub_ to interface
+with GitHub_'s API. Use it allows one to turn issues on GitHub into
+pull-requests. If that is done then once the pull-request ismerged into
+the main branch the issue is automatically closed.
 
 Sentry
 ------
