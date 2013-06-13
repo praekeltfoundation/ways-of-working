@@ -126,8 +126,9 @@ For Django applications, some applications are mandatory:
 Graphite
 --------
 
-We use Graphite_ for the majority of our metrics. You will be given details
-for the Graphite_ server and how metrics are to be published to it.
+We use Graphite_ for the majority of our metric publishing for dashboards.
+If appropriate, you will be given details for the Graphite_ server and how 
+metrics are to be published to it.
 
 IRC
 ---
