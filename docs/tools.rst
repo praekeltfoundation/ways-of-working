@@ -54,21 +54,29 @@ Git Flow
 --------
 
 We use the `Git Flow`_ branching model as part of our development.
-It's a convenient way to manage your branches.
+It's a convenient way to manage your branches. You are not required to use
+Git Flow but you are required to follow naming conventions it sets
+with regard to branch-names and prefixes.
 
 Have a read through the `blog <http://nvie.com/posts/a-successful-git-branching-model/>`_
 post describing the general idea and follow the installation instructions
 in the repository to install it for your development platform of choice.
 
-We may require our team to review your code before landing it in the develop branch.
-In that case please provide pull requests for our review.
+Unless you've explicitly been told otherwise, we require our team to review
+your code before landing it in the develop branch.
+Please provide pull requests for our review, the command line tool Hub_ is
+a convenient way of turning GitHub issues into pull-requests.
+
+The pull-request requirement still remains you are using Jira_ and you can still
+use Hub_ however your Jira_ ticket's status will not automatically change
+when the feature branch lands, you will need to update this yourself.
 
 Hub
 ---
 
 For projects with issues tracked in Github issues, We use Hub_ to interface
 with GitHub_'s API. Use it allows one to turn issues on GitHub into
-pull-requests. If that is done then once the pull-request ismerged into
+pull-requests. If that is done then once the pull-request is merged into
 the main branch the issue is automatically closed.
 
 Sentry
@@ -127,7 +135,7 @@ Graphite
 --------
 
 We use Graphite_ for the majority of our metric publishing for dashboards.
-If appropriate, you will be given details for the Graphite_ server and how 
+If appropriate, you will be given details for the Graphite_ server and how
 metrics are to be published to it.
 
 IRC
