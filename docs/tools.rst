@@ -8,7 +8,7 @@ you to either use or at least be very familiar with.
 Git
 ---
 
-We use Git, if you work with us, you will use Git and GitHub.
+We use Git. If you work with us, you will use Git and GitHub.
 There is no exception.
 
 Provide us with your GitHub username and we will provide you with a
