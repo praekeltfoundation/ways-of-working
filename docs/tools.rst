@@ -64,12 +64,12 @@ in the repository to install it for your development platform of choice.
 
 Unless you've explicitly been told otherwise, we require our team to review
 your code before landing it in the develop branch.
-Please provide pull requests for our review, the command line tool Hub_ is
+Please provide pull requests for our review, the command line tool Hub_ (see below) is
 a convenient way of turning GitHub issues into pull-requests.
 
-The pull-request requirement still remains you are using Jira_ and you can still
-use Hub_ however your Jira_ ticket's status will not automatically change
-when the feature branch lands, you will need to update this yourself.
+The pull-request requirement still remains if you are using Jira_ and you can still
+use Hub_ - however your Jira_ ticket's status will not automatically change
+when the feature branch lands, so you will need to update this yourself.
 
 Hub
 ---
