@@ -141,8 +141,9 @@ metrics are to be published to it.
 IRC
 ---
 
-IRC is our team's communication tool of choice. Join us in ``#vumi`` or
-``#jmbo`` on irc://irc.freenode.net/.
+IRC is our team's communication tool of choice. Join us in ``#prk-dev`` for general
+developer support, or ``#vumi`` or ``#jmbo`` for development of those platforms,
+on irc://irc.freenode.net/.
 
 Various tools report into these channels and provide insight into what is
 going on.
