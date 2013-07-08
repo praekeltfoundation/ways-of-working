@@ -1,5 +1,5 @@
-Praekelt Foundation Dev Ways of Working
-=======================================
+Praekelt Dev Ways of Working
+============================
 
 Hey, hopefully you're here because you're about to embark on a
 project with us.
