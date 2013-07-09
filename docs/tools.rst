@@ -8,12 +8,15 @@ you to either use or at least be very familiar with.
 Git
 ---
 
-We use Git. If you work with us, you will use Git and GitHub.
-There is no exception.
+We use Git. If you work with us, you will use Git for revision control,
+and GitHub. There is no exception.
 
 Provide us with your GitHub username and we will provide you with a
 repository to work on. All repositories are to be hosted under the
 `Praekelt Organization`_ on GitHub.
+
+Please read `What's in a Good Commit? <http://dev.solita.fi/2013/07/04/whats-in-a-good-commit.html>`_
+for a good introduction to effective use of version control commits.
 
 Issues & Tickets
 ----------------
