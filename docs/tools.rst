@@ -97,7 +97,10 @@ Puppet
 We try an automate as much as possible, this includes our hosting environment.
 You will need to give us your SSH key so we can provision a machine for your
 project. Generally you will be given access to a machine that is to be
-used for QA_ and one that is to be used for the production environment.
+used for QA_. Since our DevOps team do the production deployments, and you will
+get access to production error reports via Sentry_, you won't get access to
+production without a valid need for troubleshooeting, and then it will be without
+sudo access.
 
 These machines are provisioned using Puppet_. You will not get access to our
 puppet repository. If you need specific software installed on your machine
