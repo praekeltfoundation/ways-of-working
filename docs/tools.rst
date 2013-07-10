@@ -141,8 +141,13 @@ Translations
 ------------
 
 We use Gettext or translations in shell scripts, applications and web pages.
-In Django, Gettext is used by default for translations. Read more about Gettext
-along with some examples on Wikipedia: http://en.wikipedia.org/wiki/Gettext
+Read more about Gettext along with some examples on Wikipedia:
+http://en.wikipedia.org/wiki/Gettext
+
+In Django, Gettext is used by default for translations, utilizing
+ugettext_lazy for models.py and ugettext in other places. We like
+{% trans %} and {% blocktrans %} tags and enforce these for our
+open source products.
 
 Graphite
 --------
