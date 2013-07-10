@@ -142,7 +142,7 @@ Translations
 
 We use Gettext or translations in shell scripts, applications and web pages.
 In Django, Gettext is used by default for translations. Read more about Gettext
-along with some examples on _Wikipedia: http://en.wikipedia.org/wiki/Gettext
+along with some examples on Wikipedia: http://en.wikipedia.org/wiki/Gettext
 
 Graphite
 --------
