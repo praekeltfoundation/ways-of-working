@@ -18,6 +18,38 @@ repository to work on. All repositories are to be hosted under the
 Please read `What's in a Good Commit? <http://dev.solita.fi/2013/07/04/whats-in-a-good-commit.html>`_
 for a good introduction to effective use of version control commits.
 
+Git Flow
+--------
+
+We use the `Git Flow`_ branching model as part of our development.
+It's a convenient way to manage your branches. You are not required to use
+Git Flow but you are required to follow naming conventions it sets
+with regard to branch-names and prefixes.
+
+Have a read through the `blog <http://nvie.com/posts/a-successful-git-branching-model/>`_
+post describing the general idea and follow the installation instructions
+in the repository to install it for your development platform of choice.
+
+Unless you've explicitly been told otherwise, we require our team to review
+your code before landing it in the develop branch.
+Please provide pull requests for our review, the command line tool Hub_ (see below) is
+a convenient way of turning GitHub issues into pull-requests.
+
+The pull-request requirement still remains if you are using Jira_ and you can still
+use Hub_ - however your Jira_ ticket's status will not automatically change
+when the feature branch lands, so you will need to update this yourself.
+
+Please read `Useful Github Patterns <http://blog.quickpeople.co.uk/2013/07/10/useful-github-patterns/>`_
+to see ways of working with branches and pull requests that we like.
+
+Hub
+---
+
+For projects with issues tracked in Github issues, We use Hub_ to interface
+with GitHub_'s API. Use it allows one to turn issues on GitHub into
+pull-requests. If that is done then once the pull-request is merged into
+the main branch the issue is automatically closed.
+
 Issues & Tickets
 ----------------
 
@@ -52,38 +84,6 @@ b) going to be very hard to review.
 
 Make an effort to keep it to 16 hours or break it up unto multiple tickets
 each representing 16 hours of work.
-
-Git Flow
---------
-
-We use the `Git Flow`_ branching model as part of our development.
-It's a convenient way to manage your branches. You are not required to use
-Git Flow but you are required to follow naming conventions it sets
-with regard to branch-names and prefixes.
-
-Have a read through the `blog <http://nvie.com/posts/a-successful-git-branching-model/>`_
-post describing the general idea and follow the installation instructions
-in the repository to install it for your development platform of choice.
-
-Unless you've explicitly been told otherwise, we require our team to review
-your code before landing it in the develop branch.
-Please provide pull requests for our review, the command line tool Hub_ (see below) is
-a convenient way of turning GitHub issues into pull-requests.
-
-The pull-request requirement still remains if you are using Jira_ and you can still
-use Hub_ - however your Jira_ ticket's status will not automatically change
-when the feature branch lands, so you will need to update this yourself.
-
-Please read `Useful Github Patterns <http://blog.quickpeople.co.uk/2013/07/10/useful-github-patterns/>`_
-to see ways of working with branches and pull requests that we like.
-
-Hub
----
-
-For projects with issues tracked in Github issues, We use Hub_ to interface
-with GitHub_'s API. Use it allows one to turn issues on GitHub into
-pull-requests. If that is done then once the pull-request is merged into
-the main branch the issue is automatically closed.
 
 Sentry
 ------
