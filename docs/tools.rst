@@ -74,6 +74,9 @@ The pull-request requirement still remains if you are using Jira_ and you can st
 use Hub_ - however your Jira_ ticket's status will not automatically change
 when the feature branch lands, so you will need to update this yourself.
 
+Please read `Useful Github Patterns <http://blog.quickpeople.co.uk/2013/07/10/useful-github-patterns/>`_
+to see ways of working with branches and pull requests that we like.
+
 Hub
 ---
 
