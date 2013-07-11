@@ -102,7 +102,7 @@ You will need to give us your SSH key so we can provision a machine for your
 project. Generally you will be given access to a machine that is to be
 used for QA_. Since our DevOps team do the production deployments, and you will
 get access to production error reports via Sentry_, you won't get access to
-production without a valid need for troubleshooeting, and then it will be without
+production without a valid need for troubleshooting, and then it will be without
 sudo access.
 
 These machines are provisioned using Puppet_. You will not get access to our
