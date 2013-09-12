@@ -46,7 +46,7 @@ Hub
 ---
 
 For projects with issues tracked in Github issues, We use Hub_ to interface
-with GitHub_'s API. Use it allows one to turn issues on GitHub into
+with GitHub_'s API. It allows one to turn issues on GitHub into
 pull-requests. If that is done then once the pull-request is merged into
 the main branch the issue is automatically closed.
 
@@ -62,7 +62,7 @@ that the work is going on in.
 For development, if there is no ticket it does not exist.
 Make sure the work you are doing has a ticket and is being tracked.
 Stop working and protest immediately if people are treating your mailbox
-as their ticketing system. We're tried that, it does not work.
+as their ticketing system. We've tried that, it does not work.
 
 If a Jira project has a workflow, you need to update your tickets
 appropriately:
@@ -97,7 +97,7 @@ made available for you to configure your application's client with.
 Puppet
 ------
 
-We try an automate as much as possible, this includes our hosting environment.
+We try and automate as much as possible, this includes our hosting environment.
 You will need to give us your SSH key so we can provision a machine for your
 project. Generally you will be given access to a machine that is to be
 used for QA_. Since our DevOps team do the production deployments, and you will
