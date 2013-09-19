@@ -35,7 +35,7 @@ your code before landing it in the develop branch.
 Please provide pull requests for our review, the command line tool Hub_ (see below) is
 a convenient way of turning GitHub issues into pull-requests.
 
-The pull-request requirement still remains if you are using Jira_ and you can still
+The pull-request requirement still remains when using Jira_. You can still
 use Hub_ - however your Jira_ ticket's status will not automatically change
 when the feature branch lands, so you will need to update this yourself.
 
@@ -53,11 +53,11 @@ the main branch the issue is automatically closed.
 Issues & Tickets
 ----------------
 
-For projects that are not open-source we use Jira_. You will be given an
-account to use which will have access to the relevant projects.
+For project work we use Jira_. Only our core open-source platforms maintain
+their issues in the GitHub repository.
 
-For all our open-source projects we use GitHub_ issues on the repository
-that the work is going on in.
+You will be given an account to use which will have access to the relevant
+projects.
 
 For development, if there is no ticket it does not exist.
 Make sure the work you are doing has a ticket and is being tracked.
