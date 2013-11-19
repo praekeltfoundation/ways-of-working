@@ -53,10 +53,16 @@ Example flow
     (ve)$ git push
 
 
-Deploys
--------
+Production Deployments
+======================
 
-We deploy all days of the work-week except for fridays.
+Our DevOps team are responsible for all production deployments. This enables us
+to support the live sites and systems after hours, and ensure that 
+infrastructural requirements like backups and monitoring are standardised.
+
+Please note that production deployments need to be booked with the DevOps team
+by the appropriate Praekelt project manager, and that we deploy on Mondays
+through Thursdays.
 
 .. _Git Flow: https://github.com/nvie/gitflow
 .. _feature branch: http://nvie.com/posts/a-successful-git-branching-model/
