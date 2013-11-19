@@ -21,6 +21,7 @@ Enjoy!
 .. toctree::
    :maxdepth: 2
 
+   platforms.rst
    tools.rst
    process.rst
    projects.rst
