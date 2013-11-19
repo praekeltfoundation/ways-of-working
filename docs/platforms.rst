@@ -16,15 +16,9 @@ need to be hosted separately from our usual environments, so please get this
 sorted out prior to commencing development on a project.
 
 Django
-======
-
-Version
--------
+------
 
 You should use the latest stable release of Django unless otherwise specified.
-
-Deployment
-----------
 
 We deploy Django in the following stack:
 
@@ -46,7 +40,7 @@ Notes:
 
 
 Vumi
-====
+----
 
 See our Vumi_ site for an overview of Vumi.
 
