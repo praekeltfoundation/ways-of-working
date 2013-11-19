@@ -44,4 +44,8 @@ Vumi
 
 See our Vumi_ site for an overview of Vumi.
 
+Apps can be written for Vumi, to power messaging campaigns or information systems.
+These apps can be written in Javascript to run in a sandboxed environment (which is
+our preferred option) or in Python.
+
 .. _Vumi: http://vumi.org/
