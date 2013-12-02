@@ -4,6 +4,15 @@ Tools we use
 The following are tools we use on a regular basis and which we expect
 you to either use or at least be very familiar with.
 
+IRC
+---
+
+IRC is our team's communication tool of choice. Join us in ``#prk-dev`` for general
+developer support, or ``#vumi`` or ``#jmbo`` for development of those platforms,
+on irc://irc.freenode.net/.
+
+Various tools report into these channels and provide insight into what is
+going on.
 
 Git
 ---
@@ -158,16 +167,6 @@ Graphite
 We use Graphite_ for the majority of our metric publishing for dashboards.
 If appropriate, you will be given details for the Graphite_ server and how
 metrics are to be published to it.
-
-IRC
----
-
-IRC is our team's communication tool of choice. Join us in ``#prk-dev`` for general
-developer support, or ``#vumi`` or ``#jmbo`` for development of those platforms,
-on irc://irc.freenode.net/.
-
-Various tools report into these channels and provide insight into what is
-going on.
 
 
 .. _Praekelt Organization: https://github.com/praekelt/
