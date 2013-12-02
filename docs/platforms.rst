@@ -51,7 +51,9 @@ Apps can be written for Vumi Go, to power messaging campaigns or information sys
 These apps can be written in Javascript to run in a sandboxed environment (which is
 our preferred option) or in Python.
 
-See the `Vumi Go`_ documentation regarding writing apps.
+See the `Vumi Go`_ documentation regarding writing apps, and there is documentation
+for a `state machine`_ for USSD as well.
 
 .. _Vumi: http://vumi.org/
 .. _Vumi Go: http://vumi-go.readthedocs.org/
+.. _state machine: http://vumi-jssandbox-toolkit.readthedocs.org/
