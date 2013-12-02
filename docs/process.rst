@@ -18,6 +18,10 @@ The lifecycle of our projects is typically as follows:
    special needs which justify its own QA server. **Please bug us for a
    QA URL for this project to be pointed to your QA server.** It must be on
    our domain for client UAT.
+   Please note that QA may need sample or real data to be populated. Often,
+   the QA data gets migrated to the production site when finally deploying
+   that, so please ensure that dummy data can be cleaned up, and use
+   **CMS credentials** on QA that are *suitable for production*.
 6. You are responsible for deploying your code to this QA server, so that you
    can support the fixing of bugs found during our QA testing. You should
    **always** deploy to QA from the github repo, to avoid any side effects of
