@@ -1,3 +1,29 @@
+Our project process
+===================
+
+The lifecycle of our projects is typically as follows:
+
+1. We produce a Scope of Work for a project, which might not have all the
+   technical details, but should be comprehensive enough to list all the
+   features so that you can quote on the project's development.
+2. We work on a fixed cost basis for a fixed scope. If the scope changes,
+   we ask you for a costing for the delta or new work.
+3. The authorisation to proceed with work consists of a Purchase Order,
+   without which you cannot invoice us - so never start work without the PO.
+4. Development commences - see below. **If you don't have a github repo by this
+   point, please bug us until we provide it - please do not use your own
+   repo.**
+5. We provide you with one QA server, with the same OS setup that we'll use
+   in production - for all the projects you do for us, unless a project has
+   special needs which justify its own QA server. **Please bug us for a
+   QA URL for this project to be pointed to your QA server.** It must be on
+   our domain for client UAT.
+6. You are responsible for deploying your code to this QA server, so that you
+   can support the fixing of bugs found during our QA testing. You should
+   **always** deploy to QA from the github repo, to avoid any side effects of
+   uncommitted code.
+7. We'll deploy to production so that we can support it - see below.
+
 Our development process
 =======================
 
