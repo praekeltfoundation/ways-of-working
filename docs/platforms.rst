@@ -42,10 +42,16 @@ Notes:
 Vumi
 ----
 
-See our Vumi_ site for an overview of Vumi.
+Vumi_ is a scalable messaging engine which we use for SMS, USSD and other messaging
+protocols. Vumi Go is a hosted version of Vumi. Where Vumi gives you the tools to 
+build large scale messaging applications, Vumi Go provides you with a working 
+environment that is already integrated into numerous countries.
 
-Apps can be written for Vumi, to power messaging campaigns or information systems.
+Apps can be written for Vumi Go, to power messaging campaigns or information systems.
 These apps can be written in Javascript to run in a sandboxed environment (which is
 our preferred option) or in Python.
 
+See the `Vumi Go`_ documentation regarding writing apps.
+
 .. _Vumi: http://vumi.org/
+.. _Vumi Go: http://vumi-go.readthedocs.org/
