@@ -18,7 +18,10 @@ sorted out prior to commencing development on a project.
 Django
 ------
 
-You should use the latest stable release of Django unless otherwise specified.
+You should use the latest stable release of Django *as of the start of the project* 
+unless otherwise specified. Pin that version in your requirements so that the
+project won't break by accidently being deployed on a newer version without
+testing.
 
 We deploy Django in the following stack:
 
