@@ -40,7 +40,9 @@ Notes:
 
 - We manage hostnames in nginx, because there may be multiple QA and live hostnames
   so don't use Django's ALLOWED_HOSTS.
-
+- Make use of pip and virtualenv
+- Avoid using CachedStaticFilesStorage, or generating CSS/JS automatically as this
+  breaks load balanced environments.
 
 Vumi
 ----
