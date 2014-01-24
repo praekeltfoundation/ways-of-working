@@ -39,17 +39,20 @@ expect you to follow this as well.
 3. Work happens in a `feature branch`_. Feature branches names are composed
    of the ticket / issue number along with a one-line description of the issue.
 4. Write tests for the new features you are developing.
-5. Your schema changes are expected to be handled by a schema migration script.
-6. When work in a feature branch is ready for review then we create a
+5. Make one change per commit, and follow `What's in a Good Commit?`_
+6. Put the ticket number in the commit message. For github issues in particular,
+   see `Closing issues via commit messages`_
+7. Your schema changes are expected to be handled by a schema migration script.
+8. When work in a feature branch is ready for review then we create a
    pull-request.
-7. All collaborators on the GitHub repository are notified of the pull-request
+9. All collaborators on the GitHub repository are notified of the pull-request
    and will start the process of reviewing the changes.
-8. Any issues, concerns or changes raised or recommended are expected to be
-   attended to. Once done please notify the reviewers of the changes and
-   ask for the changes to be re-reviewed.
-9. Once all the changes are approved and one or more of the collaborators
-   has left a `:+1:` in the pull-request's comments it can be merged into
-   the main branch and is ready for a deploy.
+10. Any issues, concerns or changes raised or recommended are expected to be
+    attended to. Once done please notify the reviewers of the changes and
+    ask for the changes to be re-reviewed.
+11. Once all the changes are approved and one or more of the collaborators
+    has left a `:+1:` in the pull-request's comments it can be merged into
+    the main branch and is ready for a deploy.
 
 For your code to be ready for review we have the following expectations:
 
@@ -98,3 +101,5 @@ through Thursdays.
 .. _feature branch: http://nvie.com/posts/a-successful-git-branching-model/
 .. _pep8: https://pypi.python.org/pypi/pep8
 .. _pyflakes: https://pypi.python.org/pypi/pyflakes
+.. _What's in a Good Commit?: http://dev.solita.fi/2013/07/04/whats-in-a-good-commit.html
+.. _Closing issues via commit messages: https://help.github.com/articles/closing-issues-via-commit-messages
