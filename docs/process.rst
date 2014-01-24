@@ -87,6 +87,17 @@ Example flow
     (ve)$ git push
 
 
+Contributing back
+=================
+
+Many of our components in github are open source. In the course of using them, you
+might find improvements are necessary or possible. We like having your contributions!
+
+Please  submit a pull request for our review. Although we don't recommend it, if you 
+can't wait for our review and merge, you will need to fork that project on github and 
+submit your changes to us as soon as the pressure is off. Please do create the pull
+request then.
+
 Production Deployments
 ======================
 
