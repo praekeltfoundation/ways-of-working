@@ -46,7 +46,9 @@ Vumi
 ----
 
 Vumi_ is a scalable messaging engine which we use for SMS, USSD and other messaging
-protocols. Vumi Go is a hosted version of Vumi. Where Vumi gives you the tools to 
+protocols.
+
+Vumi Go is a hosted version of Vumi. Where Vumi gives you the tools to 
 build large scale messaging applications, Vumi Go provides you with a working 
 environment that is already integrated into numerous countries.
 
