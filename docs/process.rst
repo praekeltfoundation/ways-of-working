@@ -5,7 +5,8 @@ The lifecycle of our projects is typically as follows:
 
 1. We produce a Scope of Work for a project, which might not have all the
    technical details, but should be comprehensive enough to list all the
-   features so that you can quote on the project's development.
+   features so that you can quote on the project's development. Wireframes
+   may also be provided as part of the scope for your CE (Cost Estimate).
 2. We work on a fixed cost basis for a fixed scope. If the scope changes,
    we ask you for a costing for the delta or new work.
 3. The authorisation to proceed with work consists of a Purchase Order,
