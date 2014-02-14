@@ -58,7 +58,7 @@ expect you to follow this as well.
 For your code to be ready for review we have the following expectations:
 
 1. It is to be pep8_ compliant and pyflakes_ is not raising any issues.
-2. It is to have tests.
+2. It is to have tests. Unless otherwise agreed, 90% test coverage is required. See Coverage_
 3. The tests have to pass.
 4. There are no commented lines of code.
 5. There is adequate amount of documentation.
@@ -115,3 +115,4 @@ through Thursdays.
 .. _pyflakes: https://pypi.python.org/pypi/pyflakes
 .. _What's in a Good Commit?: http://dev.solita.fi/2013/07/04/whats-in-a-good-commit.html
 .. _Closing issues via commit messages: https://help.github.com/articles/closing-issues-via-commit-messages
+.. _Coverage: https://pypi.python.org/pypi/coverage
