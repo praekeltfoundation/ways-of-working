@@ -129,6 +129,17 @@ assumption that every machine can be provisioned from scratch with puppet.
 If the machine you've been working on needs to be rebuilt and you've made
 changes that are not in puppet then it'll be provisioned without those changes.
 
+Sideloader
+----------
+
+Our DevOps team automate deploys using Sideloader, our tool that creates
+deb packages from repos and installs them. To enable a repo for this deploy
+automation, create a .deploy.yaml file in your repository, listing
+dependencies and scripts.
+
+See `Sideloader help`_ for more info (requires login via github).
+
+
 Databases / data stores
 -----------------------
 
@@ -191,3 +202,4 @@ metrics are to be published to it.
 .. _South: http://south.aeracode.org/
 .. _Haystack: http://haystacksearch.org/
 .. _Graphite: http://graphite.wikidot.com/
+.. _Sideloader help: http://sideloader.praekelt.com/help/
