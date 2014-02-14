@@ -24,8 +24,14 @@ Provide us with your GitHub username and we will provide you with a
 repository to work on. All repositories are to be hosted under the
 `Praekelt Organization`_ on GitHub.
 
-Please read `What's in a Good Commit? <http://dev.solita.fi/2013/07/04/whats-in-a-good-commit.html>`_
+**Please** read `What's in a Good Commit? <http://dev.solita.fi/2013/07/04/whats-in-a-good-commit.html>`_
 for a good introduction to effective use of version control commits.
+
+**Avoid these:**
+
+- Don't commit merge conflicts. See `the Pro Git book on merge conflicts <http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging#Basic-Merge-Conflicts>`_
+- Don't commit snapshots. Only make one change per commit. **Read What's in a Good Commit above.** 
+- Don't commit large content files. Manage them in the CMS.
 
 Git Flow
 --------
