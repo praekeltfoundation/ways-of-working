@@ -13,5 +13,5 @@ starting any work.
    the wording they need to be resolved before you start.
 4. You need to have a clear picture of which stats need to be collected
    for the project and how those are to be stored to enable the people
-   wanting access to those stats do the type of analysis they need to do.
+   wanting access to those stats to do the type of analysis they need to do.
    This differs per project so make sure you take the time to do this properly.

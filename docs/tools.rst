@@ -1,15 +1,17 @@
-Tools we use
-============
+The tools we use
+================
 
-The following are tools we use on a regular basis and which we expect
+Below, you'll find a list of the tools that we use on a regular basis and which we expect
 you to either use or at least be very familiar with.
 
 IRC
 ---
 
-IRC is our team's communication tool of choice. Join us in ``#prk-dev`` for general
-developer support, or ``#vumi`` or ``#jmbo`` for development of those platforms,
-on irc://irc.freenode.net/.
+IRC is our team's communication tool of choice. Join us on irc://irc.freenode.net/ in any of the following channels:
+
+- ``#prk-dev`` for general discussions & developer support
+- ``#vumi`` for issues relating to the `vumi`_ platform
+- ``#jmbo`` for issues relating to the `Jmbo`_ platform.
 
 Various tools report into these channels and provide insight into what is
 going on.
@@ -17,12 +19,12 @@ going on.
 Git
 ---
 
-We use Git. If you work with us, you will use Git for revision control,
-and GitHub. There is no exception.
+We use Git for revision control, and GitHub for hosting our repositories. GitHub forms the heart of our collaborative
+process, so unfortunately we can't make any exceptions: everyone working on our projects has to be on GitHub.
 
-Provide us with your GitHub username and we will provide you with a
-repository to work on. All repositories are to be hosted under the
-`Praekelt Organization`_ on GitHub.
+To setup a repository for your project, provide us with your GitHub username and we will provide you with a
+repository hosted under the
+`Praekelt Organization`_ on GitHub. All of our projects are hosted under that account.
 
 **Please** read `What's in a Good Commit? <http://dev.solita.fi/2013/07/04/whats-in-a-good-commit.html>`_
 for a good introduction to effective use of version control commits.
@@ -45,17 +47,19 @@ Have a read through the `blog <http://nvie.com/posts/a-successful-git-branching-
 post describing the general idea and follow the installation instructions
 in the repository to install it for your development platform of choice.
 
-Unless you've explicitly been told otherwise, we require our team to review
-your code before landing it in the develop branch.
-Please provide pull requests for our review, the command line tool Hub_ (see below) is
+Unless you have explicitly been told otherwise, we require our team to review
+your code before it may be merged into the project's `develop` branch.
+For this to work, you need to submit a pull request whenever your work is ready for a merge. We can then review it,
+and merge the pull request.
+The command line tool Hub_ (see below) is
 a convenient way of turning GitHub issues into pull-requests.
 
 The pull-request requirement still remains when using Jira_. You can still
 use Hub_ - however your Jira_ ticket's status will not automatically change
-when the feature branch lands, so you will need to update this yourself.
+when the feature branch is merged into `develop`, so you will need to update this yourself.
 
 Please read `Useful Github Patterns <http://blog.quickpeople.co.uk/2013/07/10/useful-github-patterns/>`_
-to see ways of working with branches and pull requests that we like.
+to see some useful ways of working with branches and pull requests.
 
 Hub
 ---
@@ -191,3 +195,5 @@ metrics are to be published to it.
 .. _South: http://south.aeracode.org/
 .. _Haystack: http://haystacksearch.org/
 .. _Graphite: http://graphite.wikidot.com/
+.. _vumi: http://vumi.org/
+.. _Jmbo: http://www.jmbo.org/
