@@ -10,10 +10,10 @@ Hey, hopefully you're here because you're about to embark on a
 project with us.
 
 Here are some bits & pieces of documentation to help you get up to speed
-with our ways of working, the tools we use, processes follow and the
+with our ways of working, the tools we use, processes we follow and the
 things we would be expecting from you when doing projects.
 
-If anything is unclear or plain wrong please do notify us or better yet,
+If anything is unclear, or plain wrong, please do notify us or better yet:
 submit a pull request to the repository!
 
 Enjoy!
