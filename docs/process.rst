@@ -1,3 +1,20 @@
+Intellectual Property
+=====================
+
+**All** code produced in exchange for remuneration by a Praekelt company must
+have copyright assigned to "Praekelt Foundation" or "Praekelt Consulting"
+as appropriate.
+
+All code published into open Github repositories must be licenced under the
+`BSD 3-Clause Licence`_. Any third party open source modules used for the project
+must be under an explicit, compatible licence, and if belonging to you as
+a development partner, must exist prior to the start of the project to
+remain your IP.
+
+Code snippets used from other sources (i.e. not complete files, or single files
+lifted from other projects) must be attributed in the header of the file in a
+comment, including URL of the source, and author.
+
 Our project process
 ===================
 
@@ -109,6 +126,7 @@ Please note that production deployments need to be booked with the DevOps team
 by the appropriate Praekelt project manager, and that we deploy on Mondays
 through Thursdays.
 
+.. _BSD 3-Clause Licence: https://raw.github.com/nevir/readable-licenses/master/markdown/BSD3CLAUSE-LICENSE.md
 .. _Git Flow: https://github.com/nvie/gitflow
 .. _feature branch: http://nvie.com/posts/a-successful-git-branching-model/
 .. _pep8: https://pypi.python.org/pypi/pep8
