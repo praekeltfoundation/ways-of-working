@@ -26,11 +26,11 @@ testing.
 We deploy Django in the following stack:
 
 - Ubuntu Server (current LTS release)
-- haproxy for load balancing where appropriate
-- nginx
-- gunicorn
-- supervisord
-- postgresql
+- haproxy_ for load balancing where appropriate
+- nginx_
+- gunicorn_
+- supervisord_
+- postgresql_
 
 For development, you can simplify this, and for QA we won't bother about haproxy
 but the rest of the stack will be required for QA so we recommend you keep your
@@ -43,6 +43,14 @@ Notes:
 - Make use of pip and virtualenv
 - Avoid using CachedStaticFilesStorage, or generating CSS/JS automatically as this
   breaks load balanced environments.
+- There are specific requirements for logging. Please see the Logging_ section
+  for more information.
+
+.. _haproxy: http://haproxy.1wt.eu/
+.. _nginx: http://nginx.org/
+.. _gunicorn: http://gunicorn.org/
+.. _supervisord: http://supervisord.org/
+.. _postgresql: http://www.postgresql.org/
 
 Vumi
 ----
@@ -64,3 +72,20 @@ writing apps.
 .. _Vumi: http://vumi.org/
 .. _Vumi Go: http://vumi-go.readthedocs.org/
 .. _JS Sandbox toolkit: http://vumi-jssandbox-toolkit.readthedocs.org/
+
+Logging
+-------
+
+All logging must happen to a standardized path, under */var/praekelt/logs*. If your app
+has a large amount of files (celery, worker, and app, for instance), write each of
+these to a named path under */var/praekelt/logs/appname/foo.log*, otherwise just 
+*/var/praekelt/logs/foo.log* is sufficient.
+
+Logs always end with the extension *.log*. *.err* is not valid. If you need to write out
+error logs, either use the name *foo-error.log*, or write your supervisodrd_ configuration
+with the *redirect_stderr* option.
+
+The basis for this requirement is to ease debugging (hunting logs in 7 different
+directories is never fun, and causes issues when under time pressure), simplifies log
+rotation, and allows them to easily fit within our automatic log collection and 
+indexing system.
