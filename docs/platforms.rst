@@ -82,7 +82,7 @@ these to a named path under */var/praekelt/logs/appname/foo.log*, otherwise just
 */var/praekelt/logs/foo.log* is sufficient.
 
 Logs always end with the extension *.log*. *.err* is not valid. If you need to write out
-error logs, either use the name *foo-error.log*, or write your supervisodrd_ configuration
+error logs, either use the name *foo-error.log*, or write your supervisord_ configuration
 with the *redirect_stderr* option.
 
 The basis for this requirement is to ease debugging (hunting logs in 7 different
