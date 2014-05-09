@@ -166,6 +166,9 @@ For Django applications, some applications are mandatory:
 4. Haystack_ for search.
 5. Memcached_ for caching.
 
+We strongly recommend you use our sample django-skeleton_ as a starting point for 
+Django projects, as it has some of these already included.
+
 Translations
 ------------
 
@@ -203,3 +206,4 @@ metrics are to be published to it.
 .. _Haystack: http://haystacksearch.org/
 .. _Graphite: http://graphite.wikidot.com/
 .. _Sideloader help: http://sideloader.praekelt.com/help/
+.. _django-skeleton: https://github.com/praekelt/django-skeleton/#django-skeleton
