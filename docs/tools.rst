@@ -133,9 +133,16 @@ Sideloader
 ----------
 
 Our DevOps team automate deploys using Sideloader, our tool that creates
-deb packages from repos and installs them. To enable a repo for this deploy
+deb packages from github repos. To enable a repo for this deploy
 automation, create a .deploy.yaml file in your repository, listing
 dependencies and scripts.
+
+We then use puppet to install the debs whenever a new one is published.
+Ask our DevOps team for help with Sideloader, and to set up the puppet
+automation to install the debs.
+
+We can optionally set up a post commit hook to deploy any changes that are
+pushed to the develop branch, to QA - if you're feeling lucky...
 
 See `Sideloader help`_ for more info (requires login via github).
 
