@@ -23,6 +23,11 @@ unless otherwise specified. Pin that version in your requirements so that the
 project won't break by accidently being deployed on a newer version without
 testing.
 
+We strongly recommend you use our sample django-skeleton_ as a starting point for 
+Django projects, as it has the layout and configurations we use, so that deployment 
+will be smooth.
+
+
 We deploy Django in the following stack:
 
 - Ubuntu Server (current LTS release)
@@ -46,6 +51,7 @@ Notes:
 - There are specific requirements for logging. Please see the Logging_ section
   for more information.
 
+.. _django-skeleton: https://github.com/praekelt/django-skeleton/#django-skeleton
 .. _haproxy: http://haproxy.1wt.eu/
 .. _nginx: http://nginx.org/
 .. _gunicorn: http://gunicorn.org/
