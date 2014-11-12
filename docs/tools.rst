@@ -196,6 +196,13 @@ If appropriate, you will be given details for the Graphite_ server and how
 metrics are to be published to it.
 
 
+Front-end
+---------
+
+Sass_ CSS pre-processor so that we can take advantage of things that CSS doesn't have yet, or doesn't do properly: variables; nesting (used sparingly); CSS partials / includes; media queries used more like element queries; mixins.
+
+JavaScript task runners like Grunt_ and Gulp_, with lots of plugins. These handle code linting, image minification, processing Sass into CSS, concatenation and minification of CSS and JS, and running tests.
+
 .. _Praekelt Organization: https://github.com/praekelt/
 .. _Git Flow: https://github.com/nvie/gitflow
 .. _GitHub: https://github.com/
@@ -214,3 +221,6 @@ metrics are to be published to it.
 .. _Graphite: http://graphite.wikidot.com/
 .. _Sideloader help: http://sideloader.praekelt.com/help/
 .. _django-skeleton: https://github.com/praekelt/django-skeleton/#django-skeleton
+.. _Sass: http://sass-lang.com/
+.. _Grunt: http://gruntjs.com/
+.. _Gulp: http://gulpjs.com/
