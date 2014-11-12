@@ -103,6 +103,34 @@ Example flow
     ..// changes merged to develop by git flow // ..
     (ve)$ git push
 
+Our front-end development process
+=================================
+
+We build web sites so that people can access them quickly and easily, regardless of the device they're using, the type of connection they are on, or any disabilities they have. That means we build things with **Progressive Enhancement**.
+
+A basic, functional, experience is delivered to everyone; JavaScript is not required for any key functionality. We then do feature tests in JavaScript to load in additional CSS and JS enhancements that we've determined the browser can handle. Different browsers will be served different experience; they will be consistent and may be quite similar, but will not be identical. 
+
+We also care about front-end performance and accessibility, so we run regular perfomance and accessibility audits.
+
+CSS
+~~~
+
+We keep all our CSS in a few, minified, external CSS files. We don't use inline style blocks or write inline CSS.
+
+We write our CSS like SMACSS_. CSS is organised into: Base; Layout; lots of Modules; States. We keep nesting shallow, and never use IDs for styling.
+
+We make sites Responsive by default as a Future Friendly measure. 
+
+We prefer to move into HTML, CSS, and JS sooner rather than later and build Front-end Style Guides (something like `Pattern Lab`_) that evolve into pages and templates.
+
+JavaScript
+~~~~~~~~~~
+
+We write unobtrusive, js-hinted, JS. We only include jQuery_ when really necessary, preferring vanilla JavaScript code and micro-frameworks_.
+
+We `Cut the Mustard'_ to serve less capable browsers just the core, lighter and faster, experience, rather than send them lots of code they will struggle to run.
+
+
 
 Contributing back
 =================
@@ -134,3 +162,8 @@ through Thursdays.
 .. _What's in a Good Commit?: http://dev.solita.fi/2013/07/04/whats-in-a-good-commit.html
 .. _Closing issues via commit messages: https://help.github.com/articles/closing-issues-via-commit-messages
 .. _Coverage: https://pypi.python.org/pypi/coverage
+.. _SMACSS: http://www.smacss.com/
+.. _Pattern Lab: http://patternlab.io/
+.. _jQuery: http://jquery.com/
+.. _micro-frameworks: http://microjs.com/
+.. _Cut the Mustard: http://responsivenews.co.uk/post/18948466399/cutting-the-mustard
