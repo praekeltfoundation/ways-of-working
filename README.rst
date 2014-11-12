@@ -11,6 +11,7 @@ Build these docs locally with::
     $ virtualenv ve
     $ source ve/bin/activate
     (ve)$ pip install -r requirements.pip
+    (ve)$ cd docs
     (ve)$ make html
 
 Open `index.html` in `_build/html`.
