@@ -14,4 +14,4 @@ Build these docs locally with::
     (ve)$ cd docs
     (ve)$ make html
 
-Open `index.html` in `_build/html`.
+Open `index.html` in `docs/_build/html`.
