@@ -128,7 +128,7 @@ JavaScript
 
 We write unobtrusive, js-hinted, JS. We only include jQuery_ when really necessary, preferring vanilla JavaScript code and micro-frameworks_.
 
-We `Cut the Mustard'_ to serve less capable browsers just the core, lighter and faster, experience, rather than send them lots of code they will struggle to run.
+We `Cut the Mustard`_ to serve less capable browsers just the core, lighter and faster, experience, rather than send them lots of code they will struggle to run.
 
 
 
