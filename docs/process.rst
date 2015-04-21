@@ -126,7 +126,7 @@ We prefer to move into HTML, CSS, and JS sooner rather than later and build Fron
 JavaScript
 ~~~~~~~~~~
 
-We write unobtrusive, js-hinted, JS. We only include jQuery_ when really necessary, preferring vanilla JavaScript code and micro-frameworks_.
+We write unobtrusive, js-hinted, JS. We keep all our JS in a few, minified, external JS files. We don’t use inline script blocks or write inline JS. We only include jQuery_ when really necessary, preferring vanilla JavaScript code and micro-frameworks_. 
 
 We `Cut the Mustard`_ to serve less capable browsers just the core, lighter and faster, experience, rather than send them lots of code they will struggle to run.
 
