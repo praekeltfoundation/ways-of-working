@@ -62,7 +62,7 @@ HubFlow
 
 Hubflow is an adapted version of Gitflow, specifically tailored for use with Github.
 
-It provides the usefulness of `Git Flow`_ with Github goodness embedded.
+It provides the usefulness of `git-flow`_ with Github goodness embedded.
 
 For more information on that, see this link: `Hubflow <https://datasift.github.io/gitflow/>`_
 
@@ -74,7 +74,7 @@ with GitHub_'s API. It allows one to turn issues on GitHub into
 pull-requests. If that is done then once the pull-request is merged into
 the main branch the issue is automatically closed.
 
-We use the `Git Flow`_ branching model as part of our development.
+We use the `git_flow`_ branching model as part of our development.
 It's a convenient way to manage your branches. You are not required to use
 Git Flow but you are required to follow naming conventions it sets
 with regard to branch names and prefixes.
@@ -218,7 +218,8 @@ Sass_ CSS pre-processor so that we can take advantage of things that CSS doesn't
 JavaScript task runners like Grunt_ and Gulp_, with lots of plugins. These handle code linting, image minification, processing Sass into CSS, concatenation and minification of CSS and JS, and running tests.
 
 .. _Praekelt Organization: https://github.com/praekelt/
-.. _Git Flow: https://github.com/nvie/gitflow
+.. _git-flow: https://github.com/nvie/gitflow
+.. _hubflow: https://datasift.github.io/gitflow/
 .. _GitHub: https://github.com/
 .. _Jira: https://praekelt.atlassian.net/
 .. _Sentry: https://github.com/getsentry/sentry/
