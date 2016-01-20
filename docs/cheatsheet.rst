@@ -2,6 +2,11 @@
 Cheatsheet
 **********
 
+If you want to get started as quickly as possible, here is a cheatsheet with
+working examples of what's required.
+
+This will help you get up to speed with the way we do things fast.
+
 The perfect dev setup
 #####################
 
