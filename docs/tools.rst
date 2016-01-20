@@ -33,13 +33,13 @@ for a good introduction to effective use of version control commits.
 - Don't commit snapshots. Only make one change per commit. **Read What's in a Good Commit above.**
 - Don't commit large content files. Manage them in the CMS.
 
-Git Flow
+git-flow
 --------
 
-We use the `Git Flow`_ branching model as part of our development.
+We use the `git-flow`_ branching model as part of our development.
 It's a convenient way to manage your branches. You are not required to use
 Git Flow but you are required to follow naming conventions it sets
-with regard to branch-names and prefixes.
+with regard to branch names and prefixes.
 
 Have a read through the `blog <http://nvie.com/posts/a-successful-git-branching-model/>`_
 post describing the general idea and follow the installation instructions
@@ -64,7 +64,7 @@ Hubflow is an adapted version of Gitflow, specifically tailored for use with Git
 
 It provides the usefulness of `Git Flow`_ with Github goodness embedded.
 
-For more information on that, see this link: `Hubflow <https://datasift.github.io/gitflow/>`
+For more information on that, see this link: `Hubflow <https://datasift.github.io/gitflow/>`_
 
 Hub
 ---
@@ -74,15 +74,10 @@ with GitHub_'s API. It allows one to turn issues on GitHub into
 pull-requests. If that is done then once the pull-request is merged into
 the main branch the issue is automatically closed.
 
-
 We use the `Git Flow`_ branching model as part of our development.
 It's a convenient way to manage your branches. You are not required to use
 Git Flow but you are required to follow naming conventions it sets
-with regard to branch-names and prefixes.
-
-with GitHub_'s API. It allows one to turn issues on GitHub into
-pull-requests. If that is done then once the pull-request is merged into
-the main branch the issue is automatically closed.
+with regard to branch names and prefixes.
 
 Issues & Tickets
 ----------------
