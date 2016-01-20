@@ -135,7 +135,7 @@ The steps are as follows:
 
 3. Write code
 
-  This is where the actual magic happens.
+This is where the actual magic happens.
 
 4. Commit it
 ::
