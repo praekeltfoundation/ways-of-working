@@ -2,8 +2,23 @@
 Cheatsheet
 **********
 
+If you want to get started as quickly as possible, here is a cheatsheet with
+working examples of what's required.
+
+This will help you get up to speed with the way we do things fast.
+
 The perfect dev setup
 #####################
+
+Our tools and software are centered very much around Open Source and Linux.
+
+A lot of what we do happens on the command line.
+
+In order to help you get started, we have provided setups for Ubuntu and Mac
+OSX.
+
+If you are running Windows, we strongly recommend running an Ubuntu Linux
+virtual machine.
 
 Ubuntu
 ******
@@ -114,10 +129,14 @@ The steps are as follows:
   hub issue create
   <enter text>
 
-2. Start a new feature with hubflow named: issue-<issue # you created in step 1>-<description of work>
+2. Start a new feature with hubflow named: :code:`issue-<issue # you created in step 1>-<description of work>`
 ::
   hub hf feature start issue-1-going-to-write-some-code
+
 3. Write code
+
+This is where the actual magic happens.
+
 4. Commit it
 ::
   hub commit -a -m "hey look, real work!"
@@ -138,9 +157,11 @@ The steps are as follows:
   :align: center
 
 8. Merge it into develop
+
 9. Finish the feature
 ::
   hub hf feature finish
+
 10. Rinse and repeat
 
 Merging develop back into your branch
@@ -157,11 +178,12 @@ Do this:
 
 This then merges develop into your feature branch and pushes it back to github.
 
-Our feature best practices
-**************************
+Our coding best practices
+#########################
 
 We do this all the time, so here are a couple of 'quiet rules' we stick to:
 
+* Write tests early on in the development process
 * One change per feature (where possible)
 * Always convert issues to pull requests (it just makes issue clean up easier)
 * Commit often (smaller commits help in showing you what went wrong)
