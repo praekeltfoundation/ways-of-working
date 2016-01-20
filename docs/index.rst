@@ -25,3 +25,4 @@ Enjoy!
    tools.rst
    process.rst
    projects.rst
+   cheatsheet.rst
