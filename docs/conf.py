@@ -42,7 +42,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Praekelt Ways of Working'
-copyright = '%d, Praekelt Foundation developers and individual contributors' % date.today().year
+copyright = '%d, Praekelt Foundation and individual contributors' % date.today().year
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
