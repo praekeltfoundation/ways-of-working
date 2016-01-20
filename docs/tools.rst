@@ -30,7 +30,7 @@ for a good introduction to effective use of version control commits.
 **Avoid these:**
 
 - Don't commit merge conflicts. See `the Pro Git book on merge conflicts <http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging#Basic-Merge-Conflicts>`_
-- Don't commit snapshots. Only make one change per commit. **Read What's in a Good Commit above.** 
+- Don't commit snapshots. Only make one change per commit. **Read What's in a Good Commit above.**
 - Don't commit large content files. Manage them in the CMS.
 
 Git Flow
@@ -57,10 +57,29 @@ when the feature branch lands, so you will need to update this yourself.
 Please read `Useful Github Patterns <http://blog.quickpeople.co.uk/2013/07/10/useful-github-patterns/>`_
 to see ways of working with branches and pull requests that we like.
 
+Hubflow
+-------
+
+Hubflow is an adapted version of Gitflow, specifically tailored for use with Github.
+
+It provides the usefulness of `Git Flow`_ with Github goodness embedded.
+
+For more information on that, see this link: `Hubflow <https://datasift.github.io/gitflow/>`
+
 Hub
 ---
 
 For projects with issues tracked in Github issues, We use Hub_ to interface
+with GitHub_'s API. It allows one to turn issues on GitHub into
+pull-requests. If that is done then once the pull-request is merged into
+the main branch the issue is automatically closed.
+
+
+We use the `Git Flow`_ branching model as part of our development.
+It's a convenient way to manage your branches. You are not required to use
+Git Flow but you are required to follow naming conventions it sets
+with regard to branch-names and prefixes.
+
 with GitHub_'s API. It allows one to turn issues on GitHub into
 pull-requests. If that is done then once the pull-request is merged into
 the main branch the issue is automatically closed.
@@ -173,7 +192,7 @@ For Django applications, some applications are mandatory:
 4. Haystack_ for search.
 5. Memcached_ for caching.
 
-We strongly recommend you use our sample django-skeleton_ as a starting point for 
+We strongly recommend you use our sample django-skeleton_ as a starting point for
 Django projects, as it has some of these already included.
 
 Translations
