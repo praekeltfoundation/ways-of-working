@@ -30,16 +30,16 @@ for a good introduction to effective use of version control commits.
 **Avoid these:**
 
 - Don't commit merge conflicts. See `the Pro Git book on merge conflicts <http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging#Basic-Merge-Conflicts>`_
-- Don't commit snapshots. Only make one change per commit. **Read What's in a Good Commit above.** 
+- Don't commit snapshots. Only make one change per commit. **Read What's in a Good Commit above.**
 - Don't commit large content files. Manage them in the CMS.
 
-Git Flow
+git-flow
 --------
 
-We use the `Git Flow`_ branching model as part of our development.
+We use the `git-flow`_ branching model as part of our development.
 It's a convenient way to manage your branches. You are not required to use
 Git Flow but you are required to follow naming conventions it sets
-with regard to branch-names and prefixes.
+with regard to branch names and prefixes.
 
 Have a read through the `blog <http://nvie.com/posts/a-successful-git-branching-model/>`_
 post describing the general idea and follow the installation instructions
@@ -57,6 +57,15 @@ when the feature branch lands, so you will need to update this yourself.
 Please read `Useful Github Patterns <http://blog.quickpeople.co.uk/2013/07/10/useful-github-patterns/>`_
 to see ways of working with branches and pull requests that we like.
 
+HubFlow
+-------
+
+Hubflow is an adapted version of Gitflow, specifically tailored for use with Github.
+
+It provides the usefulness of `git-flow`_ with Github goodness embedded.
+
+For more information on that, see this link: `Hubflow <https://datasift.github.io/gitflow/>`_
+
 Hub
 ---
 
@@ -64,6 +73,11 @@ For projects with issues tracked in Github issues, We use Hub_ to interface
 with GitHub_'s API. It allows one to turn issues on GitHub into
 pull-requests. If that is done then once the pull-request is merged into
 the main branch the issue is automatically closed.
+
+We use the `git_flow`_ branching model as part of our development.
+It's a convenient way to manage your branches. You are not required to use
+Git Flow but you are required to follow naming conventions it sets
+with regard to branch names and prefixes.
 
 Issues & Tickets
 ----------------
@@ -173,7 +187,7 @@ For Django applications, some applications are mandatory:
 4. Haystack_ for search.
 5. Memcached_ for caching.
 
-We strongly recommend you use our sample django-skeleton_ as a starting point for 
+We strongly recommend you use our sample django-skeleton_ as a starting point for
 Django projects, as it has some of these already included.
 
 Translations
@@ -204,7 +218,8 @@ Sass_ CSS pre-processor so that we can take advantage of things that CSS doesn't
 JavaScript task runners like Grunt_ and Gulp_, with lots of plugins. These handle code linting, image minification, processing Sass into CSS, concatenation and minification of CSS and JS, and running tests.
 
 .. _Praekelt Organization: https://github.com/praekelt/
-.. _Git Flow: https://github.com/nvie/gitflow
+.. _git-flow: https://github.com/nvie/gitflow
+.. _hubflow: https://datasift.github.io/gitflow/
 .. _GitHub: https://github.com/
 .. _Jira: https://praekelt.atlassian.net/
 .. _Sentry: https://github.com/getsentry/sentry/
