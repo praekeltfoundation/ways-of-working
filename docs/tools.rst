@@ -57,7 +57,7 @@ when the feature branch lands, so you will need to update this yourself.
 Please read `Useful Github Patterns <http://blog.quickpeople.co.uk/2013/07/10/useful-github-patterns/>`_
 to see ways of working with branches and pull requests that we like.
 
-Hubflow
+HubFlow
 -------
 
 Hubflow is an adapted version of Gitflow, specifically tailored for use with Github.
