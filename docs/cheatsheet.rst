@@ -122,11 +122,6 @@ Writing code
 
 Now that the repository is ready, you can now start adding code to it.
 
-.. image:: images/build_process.png
-
-
-
-
 The steps are as follows:
 
 1. Create an issue on github.
@@ -194,38 +189,3 @@ We do this all the time, so here are a couple of 'quiet rules' we stick to:
 * Commit often (smaller commits help in showing you what went wrong)
 * When in need of help, generate a PR and ask for assistance
 * Set yourself a deadline, if you haven't cracked the problem by your deadline, start talking to people
-
-
-PlantUML Source
-***************
-
-The sequence diagram displayed above is generated with this code:
-
-Source code here:
-::
-  @startuml
-    skinparam monochrome true
-    autonumber
-
-    skinparam sequence {
-      ParticipantFontName Helvetica
-      }
-
-    developer --> praekelt : request access to repo
-    praekelt --> developer : grant access
-    developer --> github : create issue
-    github --> developer : issue created
-    developer --> github : create branch
-    github --> developer : branch created
-    developer --> developer : write code and commit locally
-    developer --> developer : write tests and ensure >90% code coverage
-    developer --> github : push branch
-    github --> developer : branch pushed
-    developer --> github : create pull request and ask for review
-    praekelt --> github : pull request reviewed and +1'ed
-    developer --> github : merge branch
-
-  @enduml
-
-
-A something else.
