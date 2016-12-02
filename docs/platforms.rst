@@ -32,10 +32,10 @@ We deploy Django in the following stack:
 
 - Ubuntu Server (current LTS release)
 - haproxy_ for load balancing where appropriate
-- nginx_
-- gunicorn_
-- supervisord_
-- postgresql_
+- nginx_ Web server that we use to run our Django applications in production.
+- gunicorn_ is the application server we're using to service our Django applications with
+- supervisord_ manages your processes and allows us to ensure that your applications are a) running and b) come up at boot should the server be restarted for whatever reason.
+- postgresql_ for storing our data, usually for Django projects
 
 For development, you can simplify this, and for QA we won't bother about haproxy
 but the rest of the stack will be required for QA so we recommend you keep your
