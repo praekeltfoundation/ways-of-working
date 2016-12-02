@@ -182,7 +182,7 @@ Django Applications
 For Django applications, some applications are mandatory:
 
 1. Sentry_ for application reporting.
-2. South_ for managing database schema changes.
+2. 
 3. Nose_ for running tests.
 4. Haystack_ for search.
 5. Memcached_ for caching.
