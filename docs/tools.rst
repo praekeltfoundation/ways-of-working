@@ -182,7 +182,7 @@ Django Applications
 For Django applications, some applications are mandatory:
 
 1. Sentry_ for application reporting.
-2. 
+2. Migrations_ for handling database schema changes
 3. Nose_ for running tests.
 4. Haystack_ for search.
 5. Memcached_ for caching.
@@ -231,7 +231,7 @@ JavaScript task runners like Grunt_ and Gulp_, with lots of plugins. These handl
 .. _QA: http://en.wikipedia.org/wiki/Quality_assurance
 .. _Hub: http://defunkt.io/hub/
 .. _Nose: https://nose.readthedocs.org/
-.. _South: http://south.aeracode.org/
+.. _Migrations: https://docs.djangoproject.com/en/1.10/topics/migrations/
 .. _Haystack: http://haystacksearch.org/
 .. _Graphite: http://graphite.wikidot.com/
 .. _Sideloader help: http://sideloader.praekelt.com/help/
