@@ -122,33 +122,57 @@ Writing code
 
 Now that the repository is ready, you can now start adding code to it.
 
+.. image:: images/working_with_git_sequence.png
+
 The steps are as follows:
 
-1. Create an issue on github.
+1. Request access to the repository.
+
+Although most of our code is opensource, you will still need write access
+to the repository.
+
+Request this from your Praekelt contact.
+
+2. Praekelt will grant you write access and you will receive an email
+notification.
+
+
+3. Create an issue on github.
 ::
   hub issue create
   <enter text>
 
-2. Start a new feature with hubflow named: :code:`issue-<issue # you created in step 1>-<description of work>`
+This assists in clarifying what the issue is, what the feature branch is going
+to be about.
+
+4. Github gives you the issue number created.
+
+5. Create branch
+Start a new feature with hubflow named: :code:`issue-<issue # you created in step 1>-<description of work>`
 ::
   hub hf feature start issue-1-going-to-write-some-code
+
+6. Github tells you are now on your newly created branch.
 
 3. Write code
 
 This is where the actual magic happens.
 
-4. Commit it
+8. Commit it
 ::
   hub commit -a -m "hey look, real work!"
 
-5. Push it back up to github
+9. Push it back up to github
 ::
   hub push
 
-6. Convert the issue into a Pull Request
+10. Github tells you all things have been pushed from your development
+environment to github.
+
+11. Convert the issue into a Pull Request
 ::
   hub pull-request -b develop -i 1
-7. Get it tested (automatically #thanks-travis-ci), reviewed and +1'ed
+12. Get it tested (automatically #thanks-travis-ci), reviewed and +1'ed
 
 .. image:: images/pull_request_approval.png
   :align: center
@@ -156,9 +180,12 @@ This is where the actual magic happens.
 .. image:: images/testing_pull_request.png
   :align: center
 
-8. Merge it into develop
+13. Merge it into develop
 
-9. Finish the feature
+9. Delete branch
+Hubflow helps with this.
+We can delete the branch as it's now merged back into develop with the following
+command:
 ::
   hub hf feature finish
 
@@ -189,3 +216,36 @@ We do this all the time, so here are a couple of 'quiet rules' we stick to:
 * Commit often (smaller commits help in showing you what went wrong)
 * When in need of help, generate a PR and ask for assistance
 * Set yourself a deadline, if you haven't cracked the problem by your deadline, start talking to people
+
+
+PlantUML Source
+***************
+
+The sequence diagram displayed above is generated with this code:
+
+Source code here:
+::
+  @startuml
+    skinparam monochrome true
+    autonumber
+
+    skinparam sequence {
+      ParticipantFontName Helvetica
+      }
+
+    developer --> praekelt : request access to repo
+    praekelt --> developer : grant access
+    developer --> github : create issue
+    github --> developer : issue created
+    developer --> github : create branch
+    github --> developer : branch created
+    developer --> developer : write code and commit locally
+    developer --> developer : write tests and ensure >90% code coverage
+    developer --> github : push branch
+    github --> developer : branch pushed
+    developer --> github : create pull request and ask for review
+    praekelt --> github : pull request reviewed and +1'ed
+    developer --> github : merge branch
+    developer --> developer : delete branch
+
+  @enduml
