@@ -23,27 +23,27 @@ virtual machine.
 Ubuntu
 ******
 
-1. Setup git:
-::
-  aptitude install git
+1. Setup git::
 
-2. Get hubflow:
-::
-  git clone https://github.com/datasift/gitflow
-  cd gitflow
-  sudo ./install.sh
+    aptitude install git
 
-3. Symlink git to hub:
-::
-  sudo ln -s /usr/bin/git /usr/local/bin/hub
+2. Get hubflow::
 
-4. Test:
-::
-  hub hf version
+    git clone https://github.com/datasift/gitflow
+    cd gitflow
+    sudo ./install.sh
 
-If you see this, or something similar, you are good to go:
-::
-  1.5.2 - latest version
+3. Symlink git to hub::
+
+    sudo ln -s /usr/bin/git /usr/local/bin/hub
+
+4. Test::
+
+    hub hf version
+
+If you see this, or something similar, you are good to go::
+
+    1.5.2 - latest version
 
 
 OSX Mavericks
@@ -55,22 +55,22 @@ Download from the App store here: https://itunes.apple.com/us/app/xcode/id497799
 
 2. Install homebrew:
 
-From terminal:
-::
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+From terminal::
 
-3. Get hubflow:
-::
-  brew install hubflow
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-4. Test:
-::
-  hub version
+3. Get hubflow::
 
-If you see this, or something similar, you are good to go:
-::
-  git version 2.4.9 (Apple Git-60)
-  hub version 2.2.2
+    brew install hubflow
+
+4. Test::
+
+    hub version
+
+If you see this, or something similar, you are good to go::
+
+    git version 2.4.9 (Apple Git-60)
+    hub version 2.2.2
 
 Working with Github
 ###################
@@ -82,38 +82,38 @@ When working with our repostories, we would have created the repository for you.
 
 Your next steps are to get it onto your local machine and initialize it for use with hubflow.
 ::
-  git clone
-  hub hf init
 
-Example with that:
-::
+    git clone
+    hub hf init
 
-  $ hub clone praekelt/ways-of-working
-  Cloning into 'ways-of-working'...
-  remote: Counting objects: 290, done.
-  remote: Total 290 (delta 0), reused 0 (delta 0), pack-reused 290
-  Receiving objects: 100% (290/290), 48.84 KiB | 71.00 KiB/s, done.
-  Resolving deltas: 100% (184/184), done.
-  Checking connectivity... done.
-  $ cd ways-of-working/
-  ways-of-working $ hub hf init
-  Using default branch names.
+Example with that::
 
-  Which branch should be used for tracking production releases?
-     - develop
-  Branch name for production releases: [master]
+    $ hub clone praekelt/ways-of-working
+    Cloning into 'ways-of-working'...
+    remote: Counting objects: 290, done.
+    remote: Total 290 (delta 0), reused 0 (delta 0), pack-reused 290
+    Receiving objects: 100% (290/290), 48.84 KiB | 71.00 KiB/s, done.
+    Resolving deltas: 100% (184/184), done.
+    Checking connectivity... done.
+    $ cd ways-of-working/
+    ways-of-working $ hub hf init
+    Using default branch names.
 
-  Which branch should be used for integration of the "next release"?
-     - develop
-  Branch name for "next release" development: [develop]
+    Which branch should be used for tracking production releases?
+       - develop
+    Branch name for production releases: [master]
 
-  How to name your supporting branch prefixes?
-  Feature branches? [feature/]
-  Release branches? [release/]
-  Hotfix branches? [hotfix/]
-  Support branches? [support/]
-  Version tag prefix? []
-  $
+    Which branch should be used for integration of the "next release"?
+       - develop
+    Branch name for "next release" development: [develop]
+
+    How to name your supporting branch prefixes?
+    Feature branches? [feature/]
+    Release branches? [release/]
+    Hotfix branches? [hotfix/]
+    Support branches? [support/]
+    Version tag prefix? []
+    $
 
 This project is now ready for use with Praekelt's ways of working.
 
@@ -126,12 +126,14 @@ The steps are as follows:
 
 1. Create an issue on github.
 ::
-  hub issue create
-  <enter text>
 
-2. Start a new feature with hubflow named: :code:`issue-<issue # you created in step 1>-<description of work>`
+    hub issue create
+    <enter text>
+
+2. Start a new feature with hubflow named :code:`issue-<issue # you created in step 1>-<description of work>`
 ::
-  hub hf feature start issue-1-going-to-write-some-code
+
+    hub hf feature start issue-1-going-to-write-some-code
 
 3. Write code
 
@@ -139,15 +141,19 @@ This is where the actual magic happens.
 
 4. Commit it
 ::
-  hub commit -a -m "hey look, real work!"
+
+    hub commit -a -m "hey look, real work!"
 
 5. Push it back up to github
 ::
-  hub push
+
+    hub push
 
 6. Convert the issue into a Pull Request
 ::
-  hub pull-request -b develop -i 1
+
+    hub pull-request -b develop -i 1
+
 7. Get it tested (automatically #thanks-travis-ci), reviewed and +1'ed
 
 .. image:: images/pull_request_approval.png
@@ -160,7 +166,8 @@ This is where the actual magic happens.
 
 9. Finish the feature
 ::
-  hub hf feature finish
+
+    hub hf feature finish
 
 10. Rinse and repeat
 
@@ -171,10 +178,10 @@ Often your feature has "fallen behind" develop.
 
 Before you can merge your code in you will have to merge develop into your branch.
 
-Do this:
-::
-  hub merge develop
-  hub merge push
+Do this::
+
+    hub merge develop
+    hub merge push
 
 This then merges develop into your feature branch and pushes it back to github.
 
