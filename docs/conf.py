@@ -41,7 +41,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Praekelt Ways of Working'
+project = u'Praekelt.org tech ways of working'
 copyright = '%d, Praekelt Foundation and individual contributors' % date.today().year
 
 # The version info for the project you're documenting, acts as replacement for
