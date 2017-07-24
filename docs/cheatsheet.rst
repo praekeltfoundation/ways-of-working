@@ -149,10 +149,13 @@ This is where the actual magic happens.
 
     hub push
 
-6. Convert the issue into a Pull Request
+6. Open a pull request (PR)
 ::
 
-    hub pull-request -b develop -i 1
+    hub pull-request -b develop
+
+You can reference the issue by saying "Fixes #<issue number>" in the body
+of the PR. This will automatically close the issue when the PR is merged.
 
 7. Get it tested (automatically #thanks-travis-ci), reviewed and +1'ed
 
