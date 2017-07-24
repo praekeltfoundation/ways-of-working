@@ -74,11 +74,6 @@ with GitHub_'s API. It allows one to turn issues on GitHub into
 pull-requests. If that is done then once the pull-request is merged into
 the main branch the issue is automatically closed.
 
-We use the `git_flow`_ branching model as part of our development.
-It's a convenient way to manage your branches. You are not required to use
-Git Flow but you are required to follow naming conventions it sets
-with regard to branch names and prefixes.
-
 Issues & Tickets
 ----------------
 
