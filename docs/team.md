@@ -15,7 +15,7 @@ The health team works on:
 
 The youth team works on:
 
-- Springster
+- [Springster](projects/springster.html)
 - [Tune Me](projects/tuneme.html)
 - The Internet of Good Things
 - BabyCenter
