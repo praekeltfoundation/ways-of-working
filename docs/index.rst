@@ -24,7 +24,7 @@ Enjoy!
    team.md
    projects/index.rst
    infrastructure/index.rst
-   platforms.rst
+   tech/index.rst
    tools.rst
    process.rst
    projects.rst
