@@ -7,7 +7,7 @@ Engineering is split into 3 teams.
 The health team works on:
 
 - [MomConnect South Africa](projects/momconnect.html)
-- HelloMama Nigeria
+- [HelloMama Nigeria](projects/hellomama.html)
 - FamilyConnect Uganda
 - NurseConnect South Africa
 
@@ -25,6 +25,6 @@ Because Praekelt deals with health and medical information, we normally
 use infrastructure hosted inside the countries where we operate:
 
 - [South Africa](infrastructure/south-africa.html)
-- Nigeria
+- [Nigeria](infrastructure/nigeria.html)
 - Uganda
 - Amazon Web Services eu-west-1
