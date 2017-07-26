@@ -9,3 +9,6 @@ It runs the [Seed stack](../tech/seed-stack.html).
 
 The hub app for MomConnect is
 [ndoh-hub](https://github.com/praekeltfoundation/ndoh-hub).
+
+The JavaScript sandbox apps for HelloMama are in
+[ndoh-jsbox](https://github.com/praekeltfoundation/ndoh-jsbox).
