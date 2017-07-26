@@ -1,7 +1,8 @@
 # MomConnect
 
 MomConnect is a project that sends messages to pregnant and new
-mothers in South Africa.
+mothers in South Africa. It's a programme by the South African
+National Department of Health (NDoH).
 
 It's hosted in [South Africa](../infrastructure/south-africa.html).
 
