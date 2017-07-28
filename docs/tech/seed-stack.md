@@ -13,4 +13,7 @@ The Seed stack is a set of microservices:
 
 We build [containers for the Seed stack][docker-seed].
 
+Each deployment of the seed stack has a "hub" or "registration" app which contains
+logic specific to that country or environment.
+
 [docker-seed]: https://github.com/praekeltfoundation/docker-seed/
