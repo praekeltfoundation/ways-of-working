@@ -15,6 +15,13 @@ Bump the version in the repository. You might have to look in:
 - `package/__init__.py`
 - `docs/conf.py`
 
+Push a new release tag to GitHub:
+
+```
+git tag 1.2.3
+git push origin 1.2.3
+```
+
 ## Release
 
 The `.travis.yml` file will deploy the package to PyPI as the
