@@ -21,7 +21,10 @@ Enjoy!
 .. toctree::
    :maxdepth: 2
 
-   platforms.rst
+   team.md
+   projects/index.rst
+   infrastructure/index.rst
+   tech/index.rst
    tools.rst
    process.rst
    projects.rst
