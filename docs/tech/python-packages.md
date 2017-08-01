@@ -23,7 +23,7 @@ to GitHub. This will create a new tag which will cause Travis to build.
 The `.travis.yml` file will deploy the package to PyPI as the
 [`praekelt.org` user](https://pypi.org/user/praekelt.org/).
 
-For each package repository, there's another repo prefixed with `docker-`. For
+For many package repositories, there's another repo prefixed with `docker-`. For
 example, `junebug` and `docker-junebug`.
 
 [pyup.io](https://pyup.io/) will make an automatic pull request to the `docker-` repo
