@@ -7,6 +7,8 @@ protocols.
 
 We [build Vumi in a container][docker-vumi] and [push it to Docker Hub][dockerhub].
 
+Nowadays for the most part Vumi is only used via [Junebug][].
+
 ## JavaScript sandbox
 
 Apps can be written for Vumi to power messaging campaigns or information systems.
@@ -22,6 +24,7 @@ environment that is already integrated into numerous countries.
 Vumi Go is deprecated and will not be available after the end of 2017.
 
 [Vumi]: https://github.com/praekelt/vumi
+[Junebug]: junebug.html
 [docker-vumi]: https://github.com/praekeltfoundation/docker-vumi
 [dockerhub]: https://hub.docker.com/r/praekeltfoundation/vumi/
 [Vumi Go]: https://vumi-go.readthedocs.org/
