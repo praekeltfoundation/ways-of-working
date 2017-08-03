@@ -24,6 +24,7 @@ Enjoy!
    team.md
    projects/index.rst
    infrastructure/index.rst
+   localisation.md
    tech/index.rst
    tools.rst
    process.rst
