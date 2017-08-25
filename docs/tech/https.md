@@ -49,25 +49,15 @@ It's also important to note that the following Python software we use does not s
 
 ### Transport Layer Security (TLS) compatibility
 
-The load balancer is currently only configured to support recent versions of
-Transport Layer Security (TLS), namely TLS 1.1 and 1.2. TLS 1.0 support is currently disabled.
-A number of older browsers on older platforms do not support TLS 1.1/1.2. Once again,
+The load balancer is currently only configured to support some versions of
+Transport Layer Security (TLS), namely TLS 1.0, 1.1 and 1.2.
+
+Some older browsers (Internet Explorer 6 or below) do not support our configuration. Once again,
 [Wikipedia has a nice table detailing compatibility](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers).
 
-The native/built-in browsers on the following mobile devices do not support TLS 1.1/1.2
-(although it is possible, and in many cases likely, that users will have installed browsers
-that do support TLS 1.1/1.2):
-
-- Android 4.4 "KitKat" and earlier
-- iOS 4 and earlier
-
-Additionally, there is poor support for TLS 1.1/1.2 in Internet Explorer versions 10 and
-earlier, although this depends on the underlying version of Windows.
-
-Note that we are able to switch on TLS 1.0 support if needed. It being disabled is simply
-the default setting for the software we use and it's generally a good idea from a security
-standpoint to only support the latest TLS versions. We will never support technologies older
-than TLS 1.0 such as SSL 3.0.
+It's generally a good idea from a security standpoint to only support the latest TLS versions.
+We will never support technologies older than TLS 1.0 such as SSL 3.0. We may have to disable
+the older versions of TLS that we support as new vulnerabilities are found.
 
 ## Enabling HTTPS on Mesos clusters
 
