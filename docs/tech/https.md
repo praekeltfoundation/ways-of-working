@@ -20,6 +20,9 @@ Users accessing an HTTPS site via a recent version of Opera Mini should not have
 compatibility issues on any platform but the effectiveness of the encrypted connection
 is reduced as the connection is decrypted at Opera's servers.
 
+You can use the [SSL Server Test from SSL Labs](https://www.ssllabs.com/ssltest/) with
+one of our domains to see the most up-to-date configuration that we support.
+
 ### Server Name Indication (SNI) compatibility
 
 The first and most important feature that any device connecting to an HTTPS site on our
