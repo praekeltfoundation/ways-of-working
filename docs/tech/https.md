@@ -44,9 +44,7 @@ The following browsers on desktop devices do not support SNI:
 
 It's also important to note that the following Python software we use does not support SNI:
 
-- Any Python software running on Python < 2.7.9 (and note that the version of Python 2.7 provided
-  with Ubuntu 14.04 is 2.7.6. Also note that our Python Docker containers will always run the
-  latest versions of Python)
+- The `ssl` standard library module in Python < 2.7.9
 - Vumi < 0.6.15
 - Twisted < 14.0.0
 
