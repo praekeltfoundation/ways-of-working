@@ -97,9 +97,6 @@ A few moments after adding the label the application should be available over HT
 Once you've verified that the application works correctly over HTTPS, set the label
 `HAPROXY_0_REDIRECT_TO_HTTPS` to `true` to redirect all HTTP traffic to HTTPS.
 
-You must verify that a certificate has been issued and HTTPS is working correctly
-before adding the redirect label.
-
 ### Using HTTP Strict Transport Security
 
 Another option that you can add for enhanced security is to enable
