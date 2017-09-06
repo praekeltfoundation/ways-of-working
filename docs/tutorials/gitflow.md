@@ -193,7 +193,7 @@ This will summarize all the changes you've made and will allow other developers 
 Other devs are able to point out mistakes that can be made in your code
 ![alt text](../images/fig15.jpg "Title")
 
-You can always create a pull request before you're completely ready, in order to make collaboration easier. When you want final approval, simply 'ping' the appropriate superior using their GitHub handle (and Slack will notify them) and ask for a review. If they're happy, they'll give you a +1 or thumbs up, like so:
+You can always create a pull request before you're completely ready, in order to make collaboration easier. When you want final approval, simply 'ping' the appropriate superior using their GitHub handle or on Slack and ask for a review. If you're on Slack, include the PR link. If they're happy, they'll give you a +1 or thumbs up, like so:
 
 ![alt text](../images/fig16.jpg "Title")
 
