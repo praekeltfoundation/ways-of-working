@@ -42,19 +42,15 @@ This is an overview of how the process works. In the next section, I'll go more 
 
 The first thing we need is a repository to work on. This will already be created on GitHub under the Praekelt or Unicore Organizations. You will the clone the repo using
 
-{% highlight bash %}
-
+```
 $ git clone <REPO SSH URL>
-
-{% endhighlight %}
+```
 
 So for example
 
-{% highlight bash %}
-
+```
 $ git clone git@github.com:universalcore/springboard.git
-
-{% endhighlight %}
+```
 
 Congrats! You've now got a local version of the code that's hosted on the GitHub servers. It looks something like this:
 
@@ -62,30 +58,26 @@ Congrats! You've now got a local version of the code that's hosted on the GitHub
 
 Note that you only have the develop branch on your machine. This is because it will only clone the default branch from github. You need to set up a local version of the master branch and then use gitflow (make sure it's installed) to take care of some of stuff behind the scenes, which you don't need to worry about.
 
-{% highlight bash %}
-
+```
 $ cd <repo name>
 $ git checkout master
-
-{% endhighlight %}
+```
 
 This will automatically create a local master branch and switch you to the master branch, switch back to the develop branch and use Gitflow to work its magic
 
-{% highlight bash %}
+```
 $ git checkout develop
 $ git flow init
-{% endhighlight %}
+```
 
 You'll get a bunch of options that you need to confirm that looks like this:
-{% highlight bash %}
-
+```
 Branch name for production releases: [master]
 Branch name for "next release" development: [develop]
 Feature branches? [feature/]
 Release branches? [release/]
 Hotfix branches? [hotfix/]
-
-{% endhighlight %}
+```
 
 Simply accept the defaults and stuff has happened!
 
@@ -93,30 +85,24 @@ Simply accept the defaults and stuff has happened!
 
 Next, you need to create and start up your virtualenv, which is explained [in a later article](/wow/2015/06/10/virtualenv.html).
 
-{% highlight bash %}
-
+```
 $ virtualenv ve
 $ source ve/bin/activate
 (ve)$
-
-{% endhighlight %}
+```
 
 The `(ve)` that appears in the command line, is telling you that the virtualenv is activated. Then you'll need to install the packages that will allow the code to run locally on your machine. The packages are listed in a file called `requirements.txt` in most cases and there may also be `requirements-dev.txt`. Luckily, we use [pip](http://en.wikipedia.org/wiki/Pip_%28package_manager%29) to take care of all of that for us. Make sure your virtualenv is activated for the appropriate repo and then simply run the following commands:
 
-{% highlight bash %}
-
+```
 (ve)$ pip install -r requirements.txt
 (ve)$ pip install -r requirements-dev.txt
-
-{% endhighlight %}
+```
 
 This is the standard way to set things up, but it may differ from repo to repo. Check out the repo's readme file for instructions. There may also be a `bootstrap.sh` file in the repo, in which case you can skip the instructions from the virtualenv to here, and simply run:
 
-{% highlight bash %}
-
+```
 $ sh bootstrap.sh
-
-{% endhighlight %}
+```
 
 Great! So your local machine *should* be set up, but there are invariably problems the first couple of times. Ask a real live human to help you out :)
 
@@ -128,27 +114,21 @@ You're going to want to create a branch to work on your feature. First, create a
 
 Make sure your repo is up to date with `git pull` and now you need to come up with the name for your branch, which will look like
 
-{% highlight bash %}
-
+```
 feature/issue-<ISSUE NUMBER>-<BRIEF DESCRIPTION, SEPARATED BY DASH "-" >
-
-{% endhighlight %}
+```
 
 So you will need to enter this command
 
-{% highlight bash %}
-
+```
 $ git flow feature start issue-<ISSUE NUMBER>-<BRIEF DESCRIPTION, SEPARATED BY DASH "-" >
-
-{% endhighlight %}
+```
 
 So in our example we would use the following command:
 
-{% highlight bash %}
-
+```
 $ git flow feature start issue-21-add-search
-
-{% endhighlight %}
+```
 
 Now we've got something that looks like this:
 
@@ -156,19 +136,15 @@ Now we've got something that looks like this:
 
 You've just created a branch on your local machine, but you now need to show everyone what you're doing by getting that branch on to the GitHub servers. You do this using the following:
 
-{% highlight bash %}
-
+```
 git flow feature publish issue-<NAME>
-
-{% endhighlight %}
+```
 
 So with our example, you would enter the following
 
-{% highlight bash %}
-
+```
 git flow feature publish issue-21-add-search
-
-{% endhighlight %}
+```
 
 There is now a remote version of your branch. You can also check on the github repo that your branch has been listed. If you get an error, the most likely cause is that you don't have push permissions. Contact an overlord to give you access.
 
@@ -180,11 +156,9 @@ You're now ready to actually start writing code, get cracking! As you complete e
 
 Now, you need to update the GiHub repo to ensure that if anyone wants to look at your code, it's up to date. You do that using:
 
-{% highlight bash %}
-
+```
 $ git push
-
-{% endhighlight %}
+```
 
 and assuming no errors . . .
 
@@ -202,19 +176,15 @@ Make sure you're
 
 then check the issue number again (this is why it's important!) and then enter the following:
 
-{% highlight bash %}
-
+```
 $ hub pull-request -b develop -i <ISSUE NUMBER>
-
-{% endhighlight %}
+```
 
 In our example, it would be
 
-{% highlight bash %}
-
+```
 $ hub pull-request -b develop -i 21
-
-{% endhighlight %}
+```
 
 This will summarize all the changes you've made and will allow other developers to review your code. It will also test the entirety of your code using [Travis](https://travis-ci.org/) and let you know if stuff is broken, but I'll deal more in depth with testing in another article. Here's an excerpt from a pull request (PR). [Here's an actual PR on GitHub](https://github.com/universalcore/springboard/pull/20).
 
@@ -229,42 +199,34 @@ You can always create a pull request before you're completely ready, in order to
 
 Just before you start celebrating however, you need to make sure that there haven't been changes in the develop branch that conflict with the code you've crafted in your feature branch. It's better to solve any potential issues before merging, so what we do is merge an up-to-date develop branch into our feature branch like so:
 
-{% highlight bash %}
-
+```
 $ git checkout develop
 $ git pull
 $ git checkout feature/<BRANCH NAME>
 $ git pull origin develop
-
-{% endhighlight %}
+```
 
 You will then need to deal with any issues that arise and may need further review from devs.
 
 Now, and only now, can you merge your feature into the develop branch using
 
-{% highlight bash %}
-
+```
 $ git flow feature finish <BRANCH NAME>
-
-{% endhighlight %}
+```
 
 In our example:
 
-{% highlight bash %}
-
+```
 $ git flow feature finish issue-21-add-search
-
-{% endhighlight %}
+```
 
 ![alt text](../images/fig18.jpg "GitFlow Finish")
 
 Note that the change is only made locally, SO MAKE SURE YOU PUSH! I have forgotten to do this last step before and ran into a multitude of merge conflicts when I finally realised my mistake :/
 
-{% highlight bash %}
-
+```
 $ git push
-
-{% endhighlight %}
+```
 
 ![alt text](../images/fig20.jpg "Title")
 
