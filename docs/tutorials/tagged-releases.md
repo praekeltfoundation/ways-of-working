@@ -7,6 +7,7 @@ The ability to create tagged releases in our molo sites, allows us to test a QA 
 This tutorial will explain how to create a tagged release for a branch on TuneMe, as an example.
 
 ## Creating your first tagged release
+
 ### Ensure everything is configured
 
 Make sure that Travis is set up for to create tagged releases. See [this commit](https://github.com/praekelt/molo-tuneme/pull/489/commits/5eb3488433b0c8daba2fd37f6f9a883c2f446d31) as an example of how to do this.
@@ -15,13 +16,17 @@ Check with SRE that the account is set up to handle tagged releases on DockerHub
 ### Create the tag
 
 Create the tag locally, on the branch that you want to test in a QA environment. The tag name should be something short and descriptive. For example `api`.
+
 ```
 git tag <tag name>
 ```
+
 Tell github about the tag by pushing your tag
+
 ```
 git push --tags
 ```
+
 You can check that that tag has been created by going to the `/releases` section on Github. e.g. `https://github.com/praekelt/molo-tuneme/releases` or more specifically for the tags, `https://github.com/praekelt/molo-tuneme/tags`.
 
 ![Tags on Github](../images/github_release_listing.png "Tag listed on Github")
@@ -29,7 +34,9 @@ You can check that that tag has been created by going to the `/releases` section
 ### Check on the Docker Image creation process
 
 If you check Travis, it should automatically start a new build, named after your tagged release.
+
 ![Travis runs tests against tagged release](../images/travis_test_tagged_release.png "Travis running tests against the tagged release")
+
 Once all of the tests have passed on Travis, it will bundle everything up and create a Docker Image, containing everything needed to run an instance of your code in production. That image will be tagged with the same tag you used earlier. If everything passes, the Image will then be pushed to the associated account on DockerHub. In this example, it will be `https://hub.docker.com/r/praekeltfoundation/molo-tuneme/tags/`. You should see the tag you created, listed at the top.
 
 ![The tag will be listed on Docker Hub](../images/tagged_release_docker_hub.png "The tagged image is listed on Docker Hub")
@@ -62,6 +69,7 @@ Our example uses the following `https://github.com/praekelt/molo-tuneme/releases
 ![Delete the tag on Github](../images/github_tag_listing.png "Delete the tag on Github")
 
 Then delete the tag locally, using the following:
+
 ```
 git tag -d <tag name>
 ```
