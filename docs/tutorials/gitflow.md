@@ -2,7 +2,7 @@
 
 So how do we use git, Github and Gitflow to create our work flow and make good quality software?
 
-##A Broad Overview
+## A Broad Overview
 
 In the development process, we need to think about branches of code and how they interact over time. In our process, there are 3 types of branches; Master, Develop and Feature branches. This structure is not enforced by git or Github, but it's the approach taken by Gitflow.
 
@@ -38,7 +38,7 @@ And finally, once we've added the features we wanted, and we're sure that our de
 
 This is an overview of how the process works. In the next section, I'll go more in depth about the commands you'll use, and how you'll be working with a local repo on your machine and communicating with the repos on the GitHub servers.
 
-##The Detailed Process
+## The Detailed Process
 
 The first thing we need is a repository to work on. This will already be created on GitHub under the Praekelt or Unicore Organizations. You will the clone the repo using
 
@@ -238,7 +238,7 @@ But remember that those changes will be made on the github server and not your m
 
 ![alt text](../images/fig22.jpg "Title")
 
-##Conclusion
+## Conclusion
 There are some things that were not covered in depth here like testing and some of the tools we use, but this has been a breakdown and explanation of the workflow and how we use git, github and gitflow to maximize our code quality and make everyone's jobs easier, although it might not seem very simple right now!
 
 Things to note:
