@@ -63,7 +63,15 @@ Okay, so you've made some changes and you want to see those new changes in QA.
 
 ### Delete the tags
 
-In order to create the new tagged release, you need to delete the tag where it is being used. To do this, first delete the tag on Gihub. Go to the tag listing, which can be found at the URL matching this pattern `https://github.com/praekelt/REPO_NAME/releases/tag/TAG_NAME`.
+In order to create the new tagged release, you need to delete the tag where it is being used. To do this, first delete the tag on Gihub.
+
+You can do this via the command line using:
+
+```
+git push --delete/-d origin <tag name>
+```
+
+Or alternatively, via the site; Go to the tag listing, which can be found at the URL matching this pattern `https://github.com/praekelt/REPO_NAME/releases/tag/TAG_NAME`.
 Our example uses the following `https://github.com/praekelt/molo-tuneme/releases/tag/api`.
 
 ![Delete the tag on Github](../images/github_tag_listing.png "Delete the tag on Github")
