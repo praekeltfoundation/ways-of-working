@@ -1,4 +1,6 @@
-# Creating Tagged Releases with Github, Travis and Mission Control
+# Creating Tagged Releases
+
+This tutorial covers creating Tagged Releases with Github, Travis and Mission Control.
 
 The ability to create tagged releases in our molo sites, allows us to test a QA version of our code, without merging our changes into the develop branch. Note that this currently only works for sites like TuneMe and Springster, not molo.core or a particular package.
 
