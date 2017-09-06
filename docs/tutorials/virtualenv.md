@@ -152,7 +152,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Here's a visual representation of how this all works.
 
-![alt text](/docs/iamges/fig41.jpg "Title")
+![alt text](../images/fig41.jpg "Title")
 
 Often when I've run into problems with running sites locally on my machine, it's because my installed packages are not up to date. This usually helps:
 
