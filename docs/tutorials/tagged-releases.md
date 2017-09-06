@@ -11,7 +11,7 @@ This tutorial will explain how to create a tagged release for a branch on TuneMe
 ### Ensure everything is configured
 
 Make sure that Travis is set up for to create tagged releases. See [this commit](https://github.com/praekelt/molo-tuneme/pull/489/commits/5eb3488433b0c8daba2fd37f6f9a883c2f446d31) as an example of how to do this.
-Check with SRE that the account is set up to handle tagged releases on DockerHub. At the time of writing this, both Springster and TuneMe are set up to handle tagged releases.
+Check that the account is set up to handle tagged releases on Docker Hub. At the time of writing this, both Springster and TuneMe are set up to handle tagged releases.
 
 ### Create the tag
 
@@ -24,7 +24,7 @@ git tag <tag name>
 Tell github about the tag by pushing your tag
 
 ```
-git push --tags
+git push origin <tag name>
 ```
 
 You can check that that tag has been created by going to the `/releases` section on Github. e.g. `https://github.com/praekelt/molo-tuneme/releases` or more specifically for the tags, `https://github.com/praekelt/molo-tuneme/tags`.
@@ -37,7 +37,7 @@ If you check Travis, it should automatically start a new build, named after your
 
 ![Travis runs tests against tagged release](../images/travis_test_tagged_release.png "Travis running tests against the tagged release")
 
-Once all of the tests have passed on Travis, it will bundle everything up and create a Docker Image, containing everything needed to run an instance of your code in production. That image will be tagged with the same tag you used earlier. If everything passes, the Image will then be pushed to the associated account on DockerHub. In this example, it will be `https://hub.docker.com/r/praekeltfoundation/molo-tuneme/tags/`. You should see the tag you created, listed at the top.
+Once all of the tests have passed on Travis, it will bundle everything up and create a Docker Image, containing everything needed to run an instance of your code in production. That image will be tagged with the same tag you used earlier. If everything passes, the Image will then be pushed to the associated account on Docker Hub. In this example, it will be `https://hub.docker.com/r/praekeltfoundation/molo-tuneme/tags/`. You should see the tag you created, listed at the top.
 
 ![The tag will be listed on Docker Hub](../images/tagged_release_docker_hub.png "The tagged image is listed on Docker Hub")
 
@@ -68,23 +68,18 @@ In order to create the new tagged release, you need to delete the tag where it i
 You can do this via the command line using:
 
 ```
-git push --delete/-d origin <tag name>
+git push --delete origin <tag name>
 ```
-
-Or alternatively, via the site; Go to the tag listing, which can be found at the URL matching this pattern `https://github.com/praekelt/REPO_NAME/releases/tag/TAG_NAME`.
-Our example uses the following `https://github.com/praekelt/molo-tuneme/releases/tag/api`.
-
-![Delete the tag on Github](../images/github_tag_listing.png "Delete the tag on Github")
 
 Then delete the tag locally, using the following:
 
 ```
-git tag -d <tag name>
+git tag --delete <tag name>
 ```
 
 ### Follow the same process as above
-You then need to recreate the tags, push them to Github, wait for tests to pass and DockerHub to update.
-You don't need to update the Docker Image on Mission Control. Instead, just hit the restart buttonfor the QA instance on MC.
+You then need to recreate the tags, push them to Github, wait for tests to pass and Docker Hub to update.
+You don't need to update the Docker Image on Mission Control. Instead, just hit the restart button for the QA instance on MC.
 
 ![Restart the QA instance](../images/mc_qa_instance.png "Just hit restart")
 
