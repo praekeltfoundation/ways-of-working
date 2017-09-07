@@ -37,7 +37,7 @@ If you check Travis, it should automatically start a new build, named after your
 
 ![Travis runs tests against tagged release](../images/travis_test_tagged_release.png "Travis running tests against the tagged release")
 
-Once all of the tests have passed on Travis, it will bundle everything up and create a Docker Image, containing everything needed to run an instance of your code in production. That image will be tagged with the same tag you used earlier. If everything passes, the Image will then be pushed to the associated account on Docker Hub. In this example, it will be `https://hub.docker.com/r/praekeltfoundation/molo-tuneme/tags/`. You should see the tag you created, listed at the top.
+Once all of the tests have passed on Travis, it will bundle everything up and create a Docker Image, containing everything needed to run an instance of your code in QA. That image will be tagged with the same tag you used earlier. If everything passes, the Image will then be pushed to the associated account on Docker Hub. In this example, it will be `https://hub.docker.com/r/praekeltfoundation/molo-tuneme/tags/`. You should see the tag you created, listed at the top.
 
 ![The tag will be listed on Docker Hub](../images/tagged_release_docker_hub.png "The tagged image is listed on Docker Hub")
 
