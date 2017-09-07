@@ -1,3 +1,7 @@
 /ve/
 /_build/
 /docs/_build/
+
+.DS_Store
+.idea/
+.vscode/

@@ -26,6 +26,7 @@ Enjoy!
    infrastructure/index.rst
    tech/index.rst
    tools.rst
+   tutorials/index.rst
    process.rst
    projects.rst
    cheatsheet.rst
