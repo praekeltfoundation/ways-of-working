@@ -13,3 +13,8 @@ The hub app for MomConnect is
 
 The JavaScript sandbox apps for HelloMama are in
 [ndoh-jsbox](https://github.com/praekeltfoundation/ndoh-jsbox).
+
+## MomConnect helpdesk
+
+The MomConnect helpdesk runs [CasePro](../tech/casepro.html) and lets
+healthcare workers answer questions from the public.
