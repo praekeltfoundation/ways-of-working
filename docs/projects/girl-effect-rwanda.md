@@ -8,17 +8,25 @@ The mobile site runs at <http://www.ninyampinga.com/> and is hosted in South Afr
 
 ## Messaging
 
-We use Vumi Go to interact with users.
+We use RapidPro and Junebug to interact with users.
+
+RapidPro and Junebug run in 3 containers in South Africa:
+
+- RapidPro web
+- RapidPro celery
+- Junebug
 
 ### SMS
 
-The shortcode 1019 is used to send and receive SMS messages.
+We use the shortcode 1019 to send and receive SMS messages.
 
-We [connect Vumi Go to Mtech using SMPP][sms_mtech] and they provide aggregation for Tigo and Airtel users. For MTN users, we establish an IPsec connection to MTN on `vumi-gateway` and [then connect Vumi Go using SMPP][sms_mtn].
+We have [Junebug config][junebug_config] for both Mtech and MTN.
+
+- Mtech is an aggregator for Tigo and Airtel users and we connect directly to them over SMPP
+- MTN require that we establish an IPsec connection from `vumi-gateway` and then connect over SMPP
 
 ### USSD
 
 The USSD code is `*900#`.
 
-[sms_mtech]: https://github.com/praekelt/puppet/blob/develop/modules/vumigo_prod/files/mtech_rw_smpp_transport.yaml
-[sms_mtn]: https://github.com/praekelt/puppet/blob/develop/modules/vumigo_prod/files/mtn_rw_sms_transport.yaml
+[junebug_config]: https://github.com/praekeltfoundation/girleffect-rwanda-config
