@@ -83,7 +83,7 @@ Simply accept the defaults and stuff has happened!
 
 ![alt text](../images/fig8.jpg "Title")
 
-Next, you need to create and start up your virtualenv, which is explained [in a later article](/wow/2015/06/10/virtualenv.html).
+Next, you need to create and start up your virtualenv, which is explained [in a later article](./virtualenv.html).
 
 ```
 $ virtualenv ve

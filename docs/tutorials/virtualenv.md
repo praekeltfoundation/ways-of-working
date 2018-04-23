@@ -145,4 +145,4 @@ Often when I've run into problems with running sites locally on my machine, it's
 
 This will check what versions are installed and if any need updating, will update for you.
 
-[Next Article: Gitflow and Workflow](/wow/2015/06/08/gitflow-and-workflow.html)
+[Next Article: Gitflow and Workflow](./gitflow-and-workflow.html)
