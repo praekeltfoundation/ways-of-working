@@ -1,24 +1,7 @@
 # Engineering teams
 
-Engineering is split into 3 teams.
-
-## Health
-
-The health team works on:
-
-- [MomConnect South Africa](projects/momconnect.html)
-- [HelloMama Nigeria](projects/hellomama.html)
-- FamilyConnect Uganda
-- NurseConnect South Africa
-
-## Youth
-
-The youth team works on:
-
-- [Springster](projects/springster.html)
-- [Tune Me](projects/tuneme.html)
-- The Internet of Good Things
-- BabyCenter
+Engineering is split into 4 squads (which can rotate
+across different work) and the SRE team.
 
 ## Site reliability engineering (SRE)
 

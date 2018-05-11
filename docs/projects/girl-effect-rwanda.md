@@ -4,7 +4,8 @@ Girl Effect Rwanda is a project to improve the lives of women and girls in Rwand
 
 ## Publishing
 
-The mobile site runs at <http://www.ninyampinga.com/> and is hosted in South Africa.
+There's a Rwandan mobile site, see
+[Girl Effect mobile sites](girl-effect-mobile-sites.html) for details.
 
 ## Messaging
 
