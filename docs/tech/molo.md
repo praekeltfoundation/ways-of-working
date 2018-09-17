@@ -14,3 +14,7 @@ There are plugins to provide additional functionality when needed:
 - <https://github.com/praekelt/molo.profiles>
 - <https://github.com/praekelt/molo.yourwords>
 - <https://github.com/praekelt/molo.polls>
+- <https://github.com/praekelt/molo.surveys>
+- <https://github.com/praekelt/molo.commenting>
+- <https://github.com/praekelt/django-google-analytics>
+- <https://github.com/praekelt/molo.servicedirectory>
