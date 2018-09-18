@@ -83,7 +83,7 @@ When working with our repostories, we would have created the repository for you.
 Your next steps are to get it onto your local machine and initialize it for use with hubflow.
 ::
 
-    git clone
+    git clone <Repo URL>
     hub hf init
 
 Example with that::
