@@ -46,7 +46,7 @@ If you see this, or something similar, you are good to go::
     1.5.2 - latest version
 
 
-OSX Mavericks
+macOS
 *************
 
 1. Setup XCode Developer tools:
