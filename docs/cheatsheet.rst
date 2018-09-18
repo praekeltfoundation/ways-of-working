@@ -139,17 +139,27 @@ The steps are as follows:
 
 This is where the actual magic happens.
 
-4. Commit it
+4. Add it
+
+-   add a single file
+::
+    hub add  filename
+
+-   add all changed files
+::
+    hub add  .
+
+5. Commit it
 ::
 
     hub commit -a -m "hey look, real work!"
 
-5. Push it back up to github
+6. Push it back up to github
 ::
 
     hub push
 
-6. Open a pull request (PR)
+7. Open a pull request (PR)
 ::
 
     hub pull-request -b develop
@@ -157,7 +167,7 @@ This is where the actual magic happens.
 You can reference the issue by saying "Fixes #<issue number>" in the body
 of the PR. This will automatically close the issue when the PR is merged.
 
-7. Get it tested (automatically #thanks-travis-ci), reviewed and +1'ed
+8. Get it tested (automatically #thanks-travis-ci), reviewed and +1'ed
 
 .. image:: images/pull_request_approval.png
   :align: center
@@ -165,14 +175,14 @@ of the PR. This will automatically close the issue when the PR is merged.
 .. image:: images/testing_pull_request.png
   :align: center
 
-8. Merge it into develop
+9. Merge it into develop
 
-9. Finish the feature
+10. Finish the feature
 ::
 
     hub hf feature finish
 
-10. Rinse and repeat
+11. Rinse and repeat
 
 Merging develop back into your branch
 *************************************
