@@ -143,7 +143,7 @@ This is where the actual magic happens.
 
 -   add a single file
 ::
-    git add  filename
+    git add <FILENAME>
 
 -   add all changed files
 ::
