@@ -143,16 +143,16 @@ This is where the actual magic happens.
 
 -   add a single file
 ::
-    hub add  filename
+    git add  filename
 
 -   add all changed files
 ::
-    hub add  .
+    git add  .
 
 5. Commit it
 ::
 
-    hub commit -a -m "hey look, real work!"
+    git commit -m "hey look, real work!"
 
 6. Push it back up to github
 ::
