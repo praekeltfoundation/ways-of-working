@@ -49,15 +49,18 @@ If you see this, or something similar, you are good to go::
 macOS
 *************
 
-1. Setup XCode Developer tools:
+#. Setup XCode Developer tools
 
-Download from the App store here: https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12
+    Download from the App store here:
 
-#. Install homebrew:
+        https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12
 
-From terminal::
+#. Install homebrew
 
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    From terminal
+    ::
+
+        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 #. Get hubflow::
 
@@ -124,61 +127,56 @@ Now that the repository is ready, you can now start adding code to it.
 
 The steps are as follows:
 
-1. Create an issue on github.
-::
+#. Create an issue on github.::
 
     hub issue create
     <enter text>
 
-#. Start a new feature with hubflow named :code:`issue-<issue # you created in step 1>-<description of work>`
-::
+#. Start a new feature with hubflow named :code:`issue-<issue # you created in step 1>-<description of work>`::
 
     hub hf feature start issue-1-going-to-write-some-code
 
 #. Write code
 
-This is where the actual magic happens.
+        This is where the actual magic happens.
 
 #. Add it
 
--   add a single file
-::
+   add a single file::
+
     git add <FILENAME>
 
--   add all changed files
-::
+   add all changed files::
+
     git add  .
 
-#. Commit it
-::
+#. Commit it::
 
     git commit -m "hey look, real work!"
 
-#. Push it back up to github
-::
+#. Push it back up to github::
 
     hub push
 
-#. Open a pull request (PR)
-::
+#. Open a pull request (PR)::
 
     hub pull-request -b develop
 
-You can reference the issue by saying "Fixes #<issue number>" in the body
-of the PR. This will automatically close the issue when the PR is merged.
+   You can reference the issue by saying "Fixes #<issue number>" in the body of the PR. This will automatically close the issue when the PR is merged.
 
 #. Get it tested (automatically #thanks-travis-ci), reviewed and +1'ed
 
-.. image:: images/pull_request_approval.png
-  :align: center
+    .. image:: images/pull_request_approval.png
+        :align: center
 
-.. image:: images/testing_pull_request.png
-  :align: center
+    .. image:: images/testing_pull_request.png
+        :align: center
 
 #. Merge it into develop
 
-#. Finish the feature
-::
+    click on the green button
+
+#. Finish the feature::
 
     hub hf feature finish
 
