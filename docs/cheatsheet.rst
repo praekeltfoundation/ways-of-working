@@ -27,17 +27,17 @@ Ubuntu
 
     aptitude install git
 
-2. Get hubflow::
+#. Get hubflow::
 
     git clone https://github.com/datasift/gitflow
     cd gitflow
     sudo ./install.sh
 
-3. Symlink git to hub::
+#. Symlink git to hub::
 
     sudo ln -s /usr/bin/git /usr/local/bin/hub
 
-4. Test::
+#. Test::
 
     hub hf version
 
@@ -46,24 +46,27 @@ If you see this, or something similar, you are good to go::
     1.5.2 - latest version
 
 
-OSX Mavericks
+macOS
 *************
 
-1. Setup XCode Developer tools:
+#. Setup XCode Developer tools
 
-Download from the App store here: https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12
+    Download from the App store here:
 
-2. Install homebrew:
+        https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12
 
-From terminal::
+#. Install homebrew
 
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    From terminal
+    ::
 
-3. Get hubflow::
+        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+#. Get hubflow::
 
     brew install hubflow
 
-4. Test::
+#. Test::
 
     hub version
 
@@ -83,7 +86,7 @@ When working with our repostories, we would have created the repository for you.
 Your next steps are to get it onto your local machine and initialize it for use with hubflow.
 ::
 
-    git clone
+    git clone <Repo URL>
     hub hf init
 
 Example with that::
@@ -124,55 +127,60 @@ Now that the repository is ready, you can now start adding code to it.
 
 The steps are as follows:
 
-1. Create an issue on github.
-::
+#. Create an issue on github.::
 
     hub issue create
     <enter text>
 
-2. Start a new feature with hubflow named :code:`issue-<issue # you created in step 1>-<description of work>`
-::
+#. Start a new feature with hubflow named :code:`issue-<issue # you created in step 1>-<description of work>`::
 
     hub hf feature start issue-1-going-to-write-some-code
 
-3. Write code
+#. Write code
 
-This is where the actual magic happens.
+        This is where the actual magic happens.
 
-4. Commit it
-::
+#. Add it
 
-    hub commit -a -m "hey look, real work!"
+   add a single file::
 
-5. Push it back up to github
-::
+    git add <FILENAME>
+
+   add all changed files::
+
+    git add  .
+
+#. Commit it::
+
+    git commit -m "hey look, real work!"
+
+#. Push it back up to github::
 
     hub push
 
-6. Open a pull request (PR)
-::
+#. Open a pull request (PR)::
 
     hub pull-request -b develop
 
-You can reference the issue by saying "Fixes #<issue number>" in the body
-of the PR. This will automatically close the issue when the PR is merged.
+   You can reference the issue by saying "Fixes #<issue number>" in the body of the PR. This will automatically close the issue when the PR is merged.
 
-7. Get it tested (automatically #thanks-travis-ci), reviewed and +1'ed
+#. Get it tested (automatically #thanks-travis-ci), reviewed and +1'ed
 
-.. image:: images/pull_request_approval.png
-  :align: center
+    .. image:: images/pull_request_approval.png
+        :align: center
 
-.. image:: images/testing_pull_request.png
-  :align: center
+    .. image:: images/testing_pull_request.png
+        :align: center
 
-8. Merge it into develop
+#. Merge it into develop
 
-9. Finish the feature
-::
+    click on the green button
+
+#. Finish the feature::
 
     hub hf feature finish
 
-10. Rinse and repeat
+#. Rinse and repeat
 
 Merging develop back into your branch
 *************************************
