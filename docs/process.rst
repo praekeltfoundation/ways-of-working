@@ -58,27 +58,29 @@ expect you to follow this as well.
    of the ticket / issue number along with a one-line description of the issue.
 4. Write tests for the new features you are developing.
 5. Make one change per commit, and follow `What's in a Good Commit?`_
-6. Put the ticket number in the commit message. For github issues in particular,
-   see `Closing issues via commit messages`_
-7. Your schema changes are expected to be handled by a schema migration script.
-8. When work in a feature branch is ready for review then we create a
+6. Write/update documentation related to the change
+7. The changelog_ has been updated
+8. Your schema changes are expected to be handled by a schema migration script.
+9. When work in a feature branch is ready for review then we create a
    pull-request.
-9. All collaborators on the GitHub repository are notified of the pull-request
-   and will start the process of reviewing the changes.
-10. Any issues, concerns or changes raised or recommended are expected to be
+10. All collaborators on the GitHub repository are notified of the pull-request
+   and will start the process of reviewing the changes. Let the relevant people know
+   that the PR is ready for review via Slack.
+11. Any issues, concerns or changes raised or recommended are expected to be
     attended to. Once done please notify the reviewers of the changes and
     ask for the changes to be re-reviewed.
-11. Once all the changes are approved and one or more of the collaborators
+12. Once all the changes are approved and one or more of the collaborators
     has left a `:+1:` in the pull-request's comments it can be merged into
     the main branch and is ready for a deploy.
 
 For your code to be ready for review we have the following expectations:
 
-1. It is to be pep8_ compliant and pyflakes_ is not raising any issues.
-2. It is to have tests. Unless otherwise agreed, 90% test coverage is required. See Coverage_
-3. The tests have to pass.
-4. There are no commented lines of code.
-5. There is adequate amount of documentation.
+1. It is to be pep8_ compliant (except for line length)
+2. It needs to be formatted by the project's formatters, usually black_, isort_, and flake8_/ruff_
+3. It needs to have tests. Unless otherwise agreed, 90% test coverage is required. See Coverage_
+4. The tests have to pass.
+5. There are no commented lines of code.
+6. There is adequate amount of documentation, including the changelog_
 
 Example flow
 ~~~~~~~~~~~~
@@ -167,3 +169,8 @@ through Thursdays.
 .. _jQuery: http://jquery.com/
 .. _micro-frameworks: http://microjs.com/
 .. _Cut the Mustard: http://responsivenews.co.uk/post/18948466399/cutting-the-mustard
+.. _black: https://black.readthedocs.io/en/stable/
+.. _isort: https://pycqa.github.io/isort/
+.. _flake8: https://flake8.pycqa.org/en/latest/
+.. _ruff: https://beta.ruff.rs/docs/
+.. _changelog: https://keepachangelog.com/en/1.1.0/
