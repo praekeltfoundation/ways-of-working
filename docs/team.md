@@ -6,8 +6,8 @@ Engineering is split into 3 teams.
 
 The health team works on:
 
-- [MomConnect South Africa](projects/momconnect.html)
-- [HelloMama Nigeria](projects/hellomama.html)
+- [MomConnect South Africa](projects/momconnect)
+- [HelloMama Nigeria](projects/hellomama)
 - FamilyConnect Uganda
 - NurseConnect South Africa
 
@@ -15,8 +15,8 @@ The health team works on:
 
 The youth team works on:
 
-- [Springster](projects/springster.html)
-- [Tune Me](projects/tuneme.html)
+- [Springster](projects/springster)
+- [Tune Me](projects/tuneme)
 - The Internet of Good Things
 - BabyCenter
 
@@ -27,7 +27,7 @@ The SRE team is responsible for hosting and infrastructure.
 Because Praekelt deals with health and medical information, we normally
 use infrastructure hosted inside the countries where we operate:
 
-- [South Africa](infrastructure/south-africa.html)
-- [Nigeria](infrastructure/nigeria.html)
+- [South Africa](infrastructure/south-africa)
+- [Nigeria](infrastructure/nigeria)
 - Uganda
 - Amazon Web Services eu-west-1

@@ -64,8 +64,8 @@ expect you to follow this as well.
 9. When work in a feature branch is ready for review then we create a
    pull-request.
 10. All collaborators on the GitHub repository are notified of the pull-request
-   and will start the process of reviewing the changes. Let the relevant people know
-   that the PR is ready for review via Slack.
+    and will start the process of reviewing the changes. Let the relevant people know
+    that the PR is ready for review via Slack.
 11. Any issues, concerns or changes raised or recommended are expected to be
     attended to. Once done please notify the reviewers of the changes and
     ask for the changes to be re-reviewed.
