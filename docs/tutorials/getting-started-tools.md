@@ -45,7 +45,7 @@ $ apt-get install hub
 You must install virtualenv. Basically, virtualenv allows you to have different versions of software and packages on your machine at the same time. See the virtualenv article <!-- link needed --> on what it does and how to use it. You should have python installed on your machine, which has pip bundled with it in in later versions. Pip is a package management system used to install and manage software packages written in Python. Just to make sure, do the following:
 
 ```
-$ easy_install pip
+$ apt install python-pip
 ```
 
 Then use Pip to install virtualenv
